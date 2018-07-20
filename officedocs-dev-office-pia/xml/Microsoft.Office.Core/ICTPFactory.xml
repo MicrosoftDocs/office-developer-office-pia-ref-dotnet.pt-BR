@@ -1,0 +1,72 @@
+<Type Name="ICTPFactory" FullName="Microsoft.Office.Core.ICTPFactory">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="71c1d37324603615d1e97988c76adabe01d145c4" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656916" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ICTPFactory" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ICTPFactory" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.ICTPFactory" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ICTPFactory" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ICTPFactory" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C033D-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Utilizado para criar um painel de tarefas personalizado.</summary>
+    <remarks>
+      <para>
+        <b>Observação</b>: você pode criar painéis de tarefas personalizados em qualquer idioma que aceite COM e permite que você crie arquivos de biblioteca de vínculo dinâmico (DLL). Por exemplo, Microsoft Visual Basic® 6.0, Microsoft Visual Basic .NET, Microsoft Visual C++®, Microsoft Visual C++ .NET e Microsoft Visual C#®. No entanto, Microsoft Visual Basic for Applications (VBA) não oferece suporte a criação de painéis de tarefas personalizados.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="CreateCTP">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomTaskPane CreateCTP (string CTPAxID, string CTPTitle, object CTPParentWindow);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomTaskPane CreateCTP([in]string CTPAxID, [in]string CTPTitle, [in]object CTPParentWindow) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ICTPFactory.CreateCTP(System.String,System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function CreateCTP (CTPAxID As String, CTPTitle As String, Optional CTPParentWindow As Object) As CustomTaskPane" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomTaskPane</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="CTPAxID" Type="System.String" />
+        <Parameter Name="CTPTitle" Type="System.String" />
+        <Parameter Name="CTPParentWindow" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="CTPAxID">CLSID ou ProgID de um objeto Microsoft ActiveX®.</param>
+        <param name="CTPTitle">O título do painel de tarefas.</param>
+        <param name="CTPParentWindow">A janela que hospeda o painel de tarefas. Se não estiver presente, o pai do painel de tarefas é a propriedade <b>ActiveWindow</b> do aplicativo host.</param>
+        <summary>Cria uma instância de um painel de tarefas personalizado.</summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomTaskPane" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

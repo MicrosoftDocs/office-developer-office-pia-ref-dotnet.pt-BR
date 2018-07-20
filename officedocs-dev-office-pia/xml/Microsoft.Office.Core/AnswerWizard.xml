@@ -1,0 +1,223 @@
+<Type Name="AnswerWizard" FullName="Microsoft.Office.Core.AnswerWizard">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="2f63a7e2898af1d9dea244a238d194201a4ece2f" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656930" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface AnswerWizard : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract AnswerWizard implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.AnswerWizard" />
+  <TypeSignature Language="VB.NET" Value="Public Interface AnswerWizard&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class AnswerWizard : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0360-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa o Assistente de resposta em um aplicativo do Microsoft Office.</summary>
+    <remarks>
+      <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+      <para>Há apenas um Assistente de resposta por aplicativo e todas as alterações ao objeto <b>AnswerWizard</b> ou o <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> coleção afetam o aplicativo ativo imediatamente.</para> Uso de 
+      <para>o <see cref="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" /> método para remover todas as entradas da lista de arquivos disponível para o Assistente de resposta atual. O uso desse método garante que os arquivos padrão disponíveis para o aplicativo host do Office não são mais acessíveis por meio do Assistente de resposta, como quando você estiver substituindo os arquivos do Assistente de resposta por sinalizador. Arquivos de AW.</para> Uso de 
+      <para>o <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> método restaurar a lista de arquivos para o Assistente de resposta atual à lista padrão de arquivos para o aplicativo host do Office. Você também pode estabelecer uma lista de arquivos padrão no registro do Windows, adicionando os nomes dos arquivos personalizados à chave do registro apropriada; os arquivos especificados na chave do registro, em seguida, serão restaurados quando ResetFileList é chamado.</para> Uso de 
+      <para>o <see cref="P:Microsoft.Office.Core.AnswerWizard.Files" /> propriedade para obter a coleção de referências de arquivo do Assistente de resposta. A propriedade <b>Files</b> retorna uma coleção de cadeias de caracteres que se referem. Arquivos de AW.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto <b>Application</b> que representa o aplicativo de contêiner para o objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ClearFileList">
+      <MemberSignature Language="C#" Value="public void ClearFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ClearFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Limpa a lista de arquivos para AnswerWizard atual, incluindo a lista padrão de arquivos para o aplicativo host do Microsoft Office.</summary>
+        <remarks>
+          <para>Use esse método para remover todas as entradas da lista de arquivos para o aplicativo especificado. Você também pode usá-lo para garantir que nenhum dos arquivos AnswerWizard padrão para o aplicativo host estão disponíveis para os usuários. Em seguida, você pode criar uma lista personalizada de arquivos usando o <see cref="M:Microsoft.Office.Core.AnswerWizardFiles.Add(System.String)" /> método do <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> conjunto.</para>
+          <para>Para restaurar o arquivo de AnswerWizard padrão definida para o aplicativo host, use o <see cref="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" /> método.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Como um exemplo de como funciona a essa propriedade, ela retornará de 1297307460, que representa a cadeia de caracteres "MSWD", se o objeto foi criado no Microsoft Word; Essa propriedade retornará 1480803660, se o objeto foi criado no Microsoft Excel. Esse valor também pode ser representado pela constante <b>wdCreatorCode</b> no Word ou <b>xlCreatorCode</b> no Excel.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para> O <b>criador</b> do 
+          <para>propriedade sempre retorna o identificador numérico para o aplicativo ativo, assim como a propriedade <b>Application</b> sempre retorna o nome do aplicativo ativo na forma de sequência. Use a propriedade <b>CreatedBy</b> do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, e <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objetos para retornar o nome da pessoa que criou esses objetos. Use as propriedades de documento para retornar informações sobre os autores de documentos do Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Files">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.AnswerWizardFiles Files { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.AnswerWizardFiles Files" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Files" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Files As AnswerWizardFiles" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::AnswerWizardFiles ^ Files { Microsoft::Office::Core::AnswerWizardFiles ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.AnswerWizardFiles</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Core.AnswerWizardFiles" /> coleção que representa a lista de arquivos disponíveis para AnswerWizard atual.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.AnswerWizard.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto <b>pai</b> do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResetFileList">
+      <MemberSignature Language="C#" Value="public void ResetFileList ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResetFileList() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.AnswerWizard.ResetFileList" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResetFileList ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResetFileList();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Redefine a lista de arquivos para AnswerWizard atual à lista padrão de arquivos para o aplicativo host do Microsoft Office.</summary>
+        <remarks>
+          <para>Use esse método para restaurar todas as entradas na lista de arquivos AnswerWizard atual à lista no registro do Windows para o aplicativo host. Você pode estabelecer uma lista de arquivos padrão no registro, adicionando os nomes dos arquivos personalizados à chave do registro apropriada.</para>
+          <para>
+            <b>Cuidado</b> edição incorreta do registro pode danificar seriamente seu sistema operacional, exigir que você reinstale-o. Microsoft não garante que os problemas resultantes da edição do Registro incorretamente possam ser resolvidos. Antes de editar o registro, faça backup dos dados valiosos. Para obter as informações mais recentes sobre como usar e proteger o registro do computador, consulte a Ajuda do Microsoft Windows.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

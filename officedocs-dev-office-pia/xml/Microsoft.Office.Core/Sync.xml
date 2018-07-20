@@ -1,0 +1,473 @@
+<Type Name="Sync" FullName="Microsoft.Office.Core.Sync">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="0ae61818dee83dc573efda9ad65d1365b5ec6b1a" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656789" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Sync : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Sync implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Sync" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Sync&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Sync : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0386-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Este objeto, membro ou enumeração foi preterida e não se destina a ser usado em seu código. Use o objeto <b>Sync</b> para gerenciar a sincronização das cópias local e do servidor de um documento compartilhado armazenado em um espaço de trabalho de documento do Windows SharePoint Services.</summary>
+    <remarks>
+      <para>A propriedade <b>Sync</b> do objeto do Microsoft Office Word 2003 <b>documento</b> , o objeto do Microsoft Office Excel 2003 <b>pasta de trabalho</b> e o objeto do Microsoft Office PowerPoint 2003 <b>apresentação</b> retorna um objeto <b>Sync</b> .</para>
+      <para>o <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade retorna informações importantes sobre o estado atual da sincronização. Use o <see cref="M:Microsoft.Office.Core.Sync.GetUpdate" /> método para atualizar o status de sincronização. Use o <see cref="P:Microsoft.Office.Core.Sync.LastSyncTime" />, <see cref="P:Microsoft.Office.Core.Sync.ErrorType" />, e <see cref="P:Microsoft.Office.Core.Sync.WorkspaceLastChangedBy" /> propriedades para retornar informações adicionais.</para>
+      <para>Consulte o <see cref="P:Microsoft.Office.Core.Sync.Status" /> documentos compartilhados de propriedade para obter informações adicionais sobre diferenças e conflitos que podem existir entre as cópias local e do servidor de.</para> Uso de 
+      <para>o <see cref="M:Microsoft.Office.Core.Sync.PutUpdate" /> método para salvar alterações locais no servidor. Feche e reabra o documento para recuperar a versão mais recente do servidor quando nenhuma alteração local são feitas. Use o <see cref="M:Microsoft.Office.Core.Sync.ResolveConflict(Microsoft.Office.Core.MsoSyncConflictResolutionType)" /> método para resolver diferenças entre a cópias local e do servidor, ou o <see cref="M:Microsoft.Office.Core.Sync.OpenVersion(Microsoft.Office.Core.MsoSyncVersionType)" /> método para abrir uma versão diferente junto com a versão local aberta no momento do documento.</para><para>Os métodos <b>GetUpdate</b>, <b>PutUpdate</b>e <b>ResolveConflict</b> do objeto <b>Sync</b> não retornam os códigos de status porque eles concluem suas tarefas de forma assíncrona. O objeto <b>Sync</b> fornece informações de status importantes por meio de um único evento, que o desenvolvedor pode ser acessado através os seguintes eventos de aplicativo específico:</para><list type="bullet"><item><para>no Word, através do evento <b>Sync</b> do documento <b></b>objeto ou o evento <b>DocumentSync</b> do objeto <b>Application</b> .</para></item><item><para>Excel em, através do evento <b>Sync</b> do objeto <b>Workbook</b> ou do evento <b>WorkbookSync</b> do objeto <b>Application</b> .</para></item><item><para>No PowerPoint, através do evento <b>PresentationSync</b> do objeto <b>Application</b> .</para></item></list><para>o evento <b>Sync</b> descrito acima retorna uma <see cref="T:Microsoft.Office.Core.MsoSyncEventType" /> valor.</para> Modelo de objeto do 
+      <para>a <b>sincronização</b> está disponível se o compartilhamento e a sincronização estão habilitados ou desabilitados no documento ativo. A propriedade <b>Sync</b> dos objetos de <b>documento</b>, <b>pasta de trabalho</b>e a <b>apresentação</b> não retorna nada quando o documento ativo não é compartilhado ou a sincronização não está habilitada. Use a propriedade <b>Status</b> para determinar se o documento está compartilhado e se a sincronização está ativada.</para><para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de usar os métodos do objeto <b>Sync</b> , é uma boa ideia para verificar a propriedade <b>Status</b> ; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique a propriedade <b>ErrorType</b> para informações adicionais sobre o tipo de erro que ocorreu.</para><para>Em muitas circunstâncias, a melhor maneira de resolver uma condição de erro é chamar o método <b>GetUpdate</b> . Por exemplo, se uma chamada para <b>PutUpdate</b> resulta em uma condição de erro, em seguida, uma chamada para <b>GetUpdate</b> redefinirá o status <b>msoSyncStatusLocalChanges</b>.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto <b>Application</b> que representa o aplicativo de contêiner para o objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará 1297307460, que representa a cadeia de caracteres MSWD; Se tiver criado no Microsoft Excel, essa propriedade retornará 1480803660. Esse valor também pode ser representado pela constante <b>wdCreatorCode</b> no Word ou <b>xlCreatorCode</b> no Excel.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para> O <b>criador</b> do 
+          <para>propriedade sempre retorna o identificador numérico para o aplicativo ativo, assim como o <see cref="P:Microsoft.Office.Core.Sync.Application" /> propriedade sempre retorna o nome do aplicativo ativo na forma de sequência. Use a propriedade <b>CreatedBy</b> do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, e <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objetos para retornar o nome da pessoa que criou esses objetos. Use as propriedades de documento para retornar informações sobre os autores de documentos do Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ErrorType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSyncErrorType ErrorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSyncErrorType ErrorType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.ErrorType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ErrorType As MsoSyncErrorType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSyncErrorType ErrorType { Microsoft::Office::Core::MsoSyncErrorType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSyncErrorType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna uma constante que indica o tipo de erro de sincronização mais recente do documento.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use a propriedade <b>ErrorType</b> para determinar o tipo de erro de sincronização mais recente do documento.</para>
+          <para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique a propriedade <b>ErrorType</b> para informações adicionais sobre o tipo de erro que ocorreu.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetUpdate">
+      <MemberSignature Language="C#" Value="public void GetUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void GetUpdate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Sync.GetUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub GetUpdate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void GetUpdate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Compara a versão local do documento compartilhado com a versão do servidor.</summary>
+        <remarks>
+          <para>Use o <see cref="M:Microsoft.Office.Core.Sync.GetUpdate" /> método para comparar a versão local do documento compartilhado com a versão do servidor e para atualizar o status de sincronização.</para>
+          <para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique o <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade para obter informações adicionais sobre o tipo de erro que ocorreu.</para>
+          <para>Em muitas circunstâncias, a melhor maneira de resolver uma condição de erro é chamar o método <b>GetUpdate</b> . Por exemplo, se uma chamada para <see cref="M:Microsoft.Office.Core.Sync.PutUpdate" /> resulta em uma condição de erro, e depois que uma chamada para <b>GetUpdate</b> redefinirá o status <b>msoSyncStatusLocalChanges</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastSyncTime">
+      <MemberSignature Language="C#" Value="public object LastSyncTime { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object LastSyncTime" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.LastSyncTime" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastSyncTime As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ LastSyncTime { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna a data e hora de quando a cópia local do documento ativo última foi sincronizada com a cópia de servidor.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use a propriedade <b>LastSyncTime</b> para determinar quanto tempo decorrido desde que a cópia local do documento ativo última foi sincronizada com a cópia do servidor. Verifique o <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade para determinar se a cópia local e a cópia do servidor estão fora de sincronia.</para>
+          <para>Se o documento ativo não estiver configurado para sincronização entre a cópia local e a cópia do servidor, a propriedade <b>LastSyncTime</b> gera um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OpenVersion">
+      <MemberSignature Language="C#" Value="public void OpenVersion (Microsoft.Office.Core.MsoSyncVersionType SyncVersionType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OpenVersion([in]valuetype Microsoft.Office.Core.MsoSyncVersionType SyncVersionType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Sync.OpenVersion(Microsoft.Office.Core.MsoSyncVersionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OpenVersion (SyncVersionType As MsoSyncVersionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OpenVersion(Microsoft::Office::Core::MsoSyncVersionType SyncVersionType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SyncVersionType" Type="Microsoft.Office.Core.MsoSyncVersionType" />
+      </Parameters>
+      <Docs>
+        <param name="SyncVersionType">Necessário <see cref="T:Microsoft.Office.Core.MsoSyncVersionType" />.</param>
+        <summary>Abre uma versão diferente do documento compartilhado junto com a versão local aberta no momento.</summary>
+        <remarks>
+          <para>Use o método <b>OpenVersion</b> para abrir a última versão exibida (<b>msoSyncVersionLastViewed</b>) ou a cópia do servidor (<b>msoSyncVersionServer</b>) do documento compartilhado junto com a versão local aberta no momento.</para> Opção de 
+          <para>o <b>msoSyncVersionLastViewed</b> exibe a cópia do documento criado sempre que o usuário substitui a cópia local pela cópia do servidor. Por exemplo, se você chamar o <see cref="M:Microsoft.Office.Core.Sync.ResolveConflict(Microsoft.Office.Core.MsoSyncConflictResolutionType)" /> método com o <b>msoSyncConflictServerWins</b> opção, em seguida, as alterações locais são salvas e podem ser exibidas chamando <b>OpenVersion (msoSyncVersionLastViewed)</b>.</para><para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique o <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade para obter informações adicionais sobre o tipo de erro que ocorreu.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(14)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto <b>pai</b> do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PutUpdate">
+      <MemberSignature Language="C#" Value="public void PutUpdate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PutUpdate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Sync.PutUpdate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PutUpdate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PutUpdate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Atualiza a cópia de servidor do documento compartilhado com a cópia local.</summary>
+        <remarks>
+          <para>O método <b>PutUpdate</b> pode encontrar uma condição de conflito, se o cliente não está ciente das alterações recentes na cópia do servidor do documento compartilhado. Chamar o <see cref="M:Microsoft.Office.Core.Sync.GetUpdate" /> método antes de chamar <b>PutUpdate</b> para atualizar o status da cópia do servidor e detectar um possível conflito.</para>
+          <para>o método <b>PutUpdate</b> indica um erro em tempo de execução se o documento local possui alterações não salvas.</para>
+          <para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique o <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade para obter informações adicionais sobre o tipo de erro que ocorreu.</para>
+          <para>Em muitas circunstâncias, a melhor maneira de resolver uma condição de erro é chamar o método <b>GetUpdate</b> . Por exemplo, se uma chamada para <b>PutUpdate</b> resulta em uma condição de erro, em seguida, uma chamada para <b>GetUpdate</b> redefinirá o status <b>msoSyncStatusLocalChanges</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ResolveConflict">
+      <MemberSignature Language="C#" Value="public void ResolveConflict (Microsoft.Office.Core.MsoSyncConflictResolutionType SyncConflictResolution);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ResolveConflict([in]valuetype Microsoft.Office.Core.MsoSyncConflictResolutionType SyncConflictResolution) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Sync.ResolveConflict(Microsoft.Office.Core.MsoSyncConflictResolutionType)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ResolveConflict (SyncConflictResolution As MsoSyncConflictResolutionType)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ResolveConflict(Microsoft::Office::Core::MsoSyncConflictResolutionType SyncConflictResolution);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(9)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="SyncConflictResolution" Type="Microsoft.Office.Core.MsoSyncConflictResolutionType" />
+      </Parameters>
+      <Docs>
+        <param name="SyncConflictResolution">Necessário <see cref="T:Microsoft.Office.Core.MsoSyncConflictResolutionType" />.</param>
+        <summary>Resolve conflitos entre as cópias local e do servidor de um documento compartilhado.</summary>
+        <remarks>
+          <para>Use o método <b>ResolveConflict</b> para resolver diferenças entre a cópia local do documento ativo e a cópia do servidor. Use a opção <b>msoSyncConflictMerge</b> (não disponível para uma pasta de trabalho do Microsoft Excel) para mesclar as alterações de cada documento em outra. Substitua a cópia do servidor por alterações locais usando a opção <b>msoSyncConflictClientWins</b> ou substitui a cópia local pela cópia do servidor alterada usando a opção <b>msoSyncConflictServerWins</b> .</para> Opção de 
+          <para>o <b>msoSyncConflictMerge</b> mescla alterações feitas na cópia do servidor para a cópia local, mas não resolve o conflito. Para resolver o conflito com as alterações mescladas ganhar, você deve salvar o documento ativo após mesclar alterações e, em seguida, chame o método <b>ResolveConflict</b> novamente com a opção <b>msoSyncConflictClientWins</b> .</para> Método 
+          <para>o <b>ResolveConflict</b> pode encontrar uma condição de conflito, se o cliente não está ciente das alterações recentes na cópia do servidor do documento compartilhado. Chamar o <see cref="M:Microsoft.Office.Core.Sync.GetUpdate" /> método antes de chamar <b>ResolveConflict</b> para atualizar o status da cópia do servidor e detectar um possível conflito.</para><para>o método <b>ResolveConflict</b> indica um erro em tempo de execução se o documento local possui alterações não salvas ou quando não há conflitos entre as duas cópias do documento.</para><para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique o <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade para obter informações adicionais sobre o tipo de erro que ocorreu.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Status">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoSyncStatusType this { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoSyncStatusType Status" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.Status" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Status As MsoSyncStatusType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoSyncStatusType default { Microsoft::Office::Core::MsoSyncStatusType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoSyncStatusType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o status da sincronização da cópia local do documento ativo com a cópia do servidor.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Use a propriedade <b>Status</b> para determinar se a cópia local do documento ativo está sincronizada com a cópia do servidor compartilhado. Use o <see cref="M:Microsoft.Office.Core.Sync.GetUpdate" /> método para atualizar o status. Use os seguintes métodos e propriedades, quando apropriado para responder a várias condições de status:</para>
+          <list type="bullet">
+            <item>
+              <para>
+                <b>msoSyncStatusConflict</b> - <b>True</b> quando tanto a cópias local e do servidor foram alteradas. Use o <see cref="M:Microsoft.Office.Core.Sync.ResolveConflict(Microsoft.Office.Core.MsoSyncConflictResolutionType)" /> método para resolver as diferenças.</para>
+            </item>
+            <item>
+              <para>
+                <b>msoSyncStatusError</b> - seleção de <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade.</para>
+            </item>
+            <item>
+              <para>
+                <b>msoSyncStatusLocalChanges</b> - <b>True</b> quando apenas a cópia local possui alterações. Use o <see cref="M:Microsoft.Office.Core.Sync.PutUpdate" /> método para salvar alterações locais para a cópia do servidor.</para>
+            </item>
+            <item>
+              <para>
+                <b>msoSyncStatusNewerAvailable</b> - <b>True</b> quando apenas a cópia do servidor foi alterada. Feche e reabra o documento para trabalhar com a cópia mais recente do servidor.</para>
+            </item>
+            <item>
+              <para>
+                <b>msoSyncStatusSuspended</b> - Use o <see cref="M:Microsoft.Office.Core.Sync.Unsuspend" /> método para continuar a sincronização.</para>
+            </item>
+          </list>
+          <para>a propriedade <b>Status</b> retorna um único <see cref="T:Microsoft.Office.Core.MsoSyncStatusType" /> constante da lista na seguinte ordem de precedência:</para>
+          <list type="number">
+            <item>
+              <description>
+                <b>msoSyncStatusNoSharedWorkspace</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoSyncStatusError</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoSyncStatusSuspended</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoSyncStatusConflict</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoSyncStatusNewerAvailable</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>msoSyncStatusLocalChanges</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b> msoSyncStatusLatest</b>
+              </description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Unsuspend">
+      <MemberSignature Language="C#" Value="public void Unsuspend ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Unsuspend() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Sync.Unsuspend" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Unsuspend ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Unsuspend();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(10)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Reinicia a sincronização entre a cópia local e a cópia do servidor de um documento compartilhado.</summary>
+        <remarks>
+          <para>Use o método <b>Unsuspend</b> para continuar a sincronização do documento quando o <see cref="P:Microsoft.Office.Core.Sync.Status" /> propriedade retorna <b>msoSyncStatusSuspended</b>.</para>
+          <para>Não todos os problemas de sincronização de documento geram erros interceptáveis de tempo de execução. Depois de executar uma operação usando o <see cref="T:Microsoft.Office.Core.Sync" /> do objeto, ele é uma boa ideia para verificar a propriedade <b>Status</b> ; Se a propriedade <b>Status</b> for <b>msoSyncStatusError</b>, verifique o <see cref="P:Microsoft.Office.Core.Sync.ErrorType" /> propriedade para obter informações adicionais sobre o tipo de erro que ocorreu.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="WorkspaceLastChangedBy">
+      <MemberSignature Language="C#" Value="public string WorkspaceLastChangedBy { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string WorkspaceLastChangedBy" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Sync.WorkspaceLastChangedBy" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property WorkspaceLastChangedBy As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ WorkspaceLastChangedBy { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Exibe o nome amigável do usuário que salvo pela última vez alterações na cópia do servidor de um documento compartilhado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o documento ativo não estiver configurado para sincronização entre a cópia local e a cópia do servidor, a propriedade <b>WorkspaceLastChangedBy</b> gerará um erro em tempo de execução.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

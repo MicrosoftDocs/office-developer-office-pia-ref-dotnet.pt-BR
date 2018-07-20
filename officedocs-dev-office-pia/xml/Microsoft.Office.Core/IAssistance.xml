@@ -1,0 +1,185 @@
+<Type Name="IAssistance" FullName="Microsoft.Office.Core.IAssistance">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7d132f43925371385c5db2be9aa6102237cdaa66" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20657030" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IAssistance" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IAssistance" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IAssistance" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IAssistance" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IAssistance" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("4291224C-DEFE-485B-8E69-6CF8AA85CB76")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Fornece os meios para que os desenvolvedores criem uma experiência de ajuda personalizada para os usuários no Microsoft Office.</summary>
+    <remarks>
+      <para>A propriedade <b>Assistência</b> de um objeto <b>Application</b> retorna um <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto. O <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto expõe os métodos que permitem que os desenvolvedores para exibir tópicos de Ajuda no Visualizador da Ajuda do Office ou para exibir tópicos de ajuda fornecidos com o Office na janela da Ajuda do aplicativo host. Os desenvolvedores passam identificações da Ajuda específicos para o sistema de Ajuda ou passam consultas de pesquisa específica. Ajuda IDs precisa ser explicitamente adicionada ao arquivo de ajuda na ordem para a ID de ajuda retornar o tópico da Ajuda.</para>
+      <para />
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="ClearDefaultContext">
+      <MemberSignature Language="C#" Value="public void ClearDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ClearDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ClearDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ClearDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ClearDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">A ID do tópico de ajuda padrão.</param>
+        <summary>Limpa o tópico de ajuda padrão previamente definido no <see cref="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" /> método.</summary>
+        <remarks>
+          <para>Ao executar este método irá parar o tópico de ajuda padrão sejam exibidas quando o usuário pressiona F1 ou clica no botão Ajuda em uma caixa de diálogo.</para> Propriedade 
+          <para>a <b>Assistência</b> de um objeto <b>Application</b> retorna um <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto. O <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto expõe os métodos que permitem que os desenvolvedores para exibir tópicos de Ajuda no Visualizador da Ajuda do Office ou para exibir tópicos de ajuda fornecidos com o Office na janela da Ajuda do aplicativo host. Os desenvolvedores passam identificações da Ajuda específicos para o sistema de Ajuda ou passam consultas de pesquisa específica. Ajudar IDs precisa ser explicitamente adicionada ao arquivo de ajuda na ordem para a ID de ajuda retornar o tópico da Ajuda.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SearchHelp">
+      <MemberSignature Language="C#" Value="public void SearchHelp (string Query, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SearchHelp([in]string Query, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SearchHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SearchHelp (Query As String, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Query" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Query">Representa a palavra-chave ou frase para a pesquisa.</param>
+        <param name="Scope">Opcional, o namespace registrado no aplicativo host.</param>
+        <summary>Realiza uma pesquisa no Visualizador da Ajuda do Office com base em uma ou mais palavras-chave. As palavras-chave podem ser uma palavra ou uma frase.</summary>
+        <remarks>
+          <para>A propriedade <b>Assistência</b> de um objeto <b>Application</b> retorna um <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto. O <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto expõe os métodos que permitem que os desenvolvedores para exibir tópicos de Ajuda no Visualizador da Ajuda do Office ou para exibir tópicos de ajuda fornecidos com o Office na janela da Ajuda do aplicativo host. Os desenvolvedores passam identificações da Ajuda específicos para o sistema de Ajuda ou passam consultas de pesquisa específica. Ajudar IDs precisa ser explicitamente adicionada ao arquivo de ajuda na ordem para a ID de ajuda retornar o tópico da Ajuda.</para>
+          <para>o usuário pode retornar ajuda mais relevantes, como estreitar o escopo da pesquisa, desde que o escopo especificado é aplicável ao aplicativo. Os escopos a seguintes estão disponíveis em aplicativos do Microsoft Office. Por padrão, o escopo é definido para o namespace do aplicativo atual se uma cadeia de caracteres <b>nula</b> ("") é passado como um parâmetro.</para>
+          <list type="table">
+            <item>
+              <description>Todos os</description>
+              <description>"" (cadeia de caracteres nula)</description>
+            </item>
+            <item>
+              <description>Access, Excel, Outlook, PowerPoint, Project, Publisher, SharePoint Designer, Visio e Word</description>
+              <description>DEV</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetDefaultContext">
+      <MemberSignature Language="C#" Value="public void SetDefaultContext (string HelpId);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetDefaultContext([in]string HelpId) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.SetDefaultContext(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetDefaultContext (HelpId As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetDefaultContext(System::String ^ HelpId);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">A ID do tópico de ajuda padrão.</param>
+        <summary>Define um tópico de ajuda como tópico padrão que será exibido quando o usuário abrir uma janela de ajuda.</summary>
+        <remarks>
+          <para>o tópico de ajuda especificado neste método não será exibida se o Office já tenha definido um tópico da Ajuda padrão nesse escopo. Além disso, para algumas caixas de diálogo, independentemente se uma ID é passada pelo método, o tópico da Ajuda fornecida com o Office será exibido quando o usuário pressiona a tecla F1 ou clica no botão Ajuda. Por exemplo, se o usuário está em uma caixa de diálogo personalizada e pressiona F1, um tópico de Ajuda personalizado ou interno será exibido se for especificada pelo desenvolvedor. Se nenhuma identificação padrão for especificada, o tópico de ajuda padrão interno Office será exibido. Da mesma forma, se o usuário estiver na caixa de diálogo Novo documento, por exemplo, o tópico de ajuda Office especificado será exibido independentemente se um ID diferente é passado pelo método. </para>
+          <para>A <b>Assistência</b> de propriedade de um objeto <b>Application</b> retorna um <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto. O <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto expõe os métodos que permitem que os desenvolvedores para exibir tópicos de Ajuda no Visualizador da Ajuda do Office ou para exibir tópicos de ajuda fornecidos com o Office na janela da Ajuda do aplicativo host. Os desenvolvedores passam identificações da Ajuda específicos para o sistema de Ajuda ou passam consultas de pesquisa específica. Ajudar IDs precisa ser explicitamente adicionada ao arquivo de ajuda na ordem para a ID de ajuda retornar o tópico da Ajuda.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ShowHelp">
+      <MemberSignature Language="C#" Value="public void ShowHelp (string HelpId = &quot;&quot;, string Scope = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ShowHelp([in]string HelpId, [in]string Scope) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IAssistance.ShowHelp(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ShowHelp (Optional HelpId As String = &quot;&quot;, Optional Scope As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="HelpId" Type="System.String" />
+        <Parameter Name="Scope" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="HelpId">Opcional, a ID do tópico da Ajuda.</param>
+        <param name="Scope">Opcional, o namespace registrado no aplicativo host.</param>
+        <summary>Exibe o tópico de ajuda especificado por sua ID no Visualizador da Ajuda do Office ou, para os tópicos de ajuda fornecidos com o Office, na janela Ajuda do atual aplicativo Office.</summary>
+        <remarks>
+          <para>A propriedade <b>Assistência</b> de um objeto <b>Application</b> retorna um <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto. O <see cref="T:Microsoft.Office.Core.IAssistance" /> objeto expõe os métodos que permitem que os desenvolvedores para exibir tópicos de Ajuda no Visualizador da Ajuda do Office ou para exibir tópicos de ajuda fornecidos com o Office na janela da Ajuda do aplicativo host. Os desenvolvedores passam identificações da Ajuda específicos para o sistema de Ajuda ou passam consultas de pesquisa específica. Ajudar IDs precisa ser explicitamente adicionada ao arquivo de ajuda na ordem para a ID de ajuda retornar o tópico da Ajuda.</para>
+          <para>Os escopos a seguintes estão disponíveis nos aplicativos do Microsoft Office. Por padrão, o escopo é definido para o namespace do aplicativo atual se uma cadeia de caracteres <b>nula</b> ("") é passado como um parâmetro.</para>
+          <list type="table">
+            <item>
+              <description>Todos os</description>
+              <description>"" (cadeia de caracteres nula)</description>
+            </item>
+            <item>
+              <description>Access, Excel, Outlook, PowerPoint, Project, Publisher, SharePoint Designer, Visio e Word</description>
+              <description>DEV</description>
+            </item>
+          </list>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

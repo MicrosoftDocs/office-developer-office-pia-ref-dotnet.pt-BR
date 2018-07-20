@@ -1,0 +1,85 @@
+<Type Name="MsoCommandBarButtonHyperlinkType" FullName="Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="1b9409ee8c51d07c21ede8a8f93b53405fd143e3" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20657135" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public enum MsoCommandBarButtonHyperlinkType" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed MsoCommandBarButtonHyperlinkType extends System.Enum" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType" />
+  <TypeSignature Language="VB.NET" Value="Public Enum MsoCommandBarButtonHyperlinkType" />
+  <TypeSignature Language="C++ CLI" Value="public enum class MsoCommandBarButtonHyperlinkType" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Enum</BaseTypeName>
+  </Base>
+  <Docs>
+    <summary>Especifica se o botão da barra de comandos é um hiperlink. Se for, especifica também se o hiperlink deve iniciar outro aplicativo, como o navegador, ou se deve inserir uma imagem no ponto de seleção ativo.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="msoCommandBarButtonHyperlinkInsertPicture">
+      <MemberSignature Language="C#" Value="msoCommandBarButtonHyperlinkInsertPicture" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType msoCommandBarButtonHyperlinkInsertPicture = int32(2)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType.msoCommandBarButtonHyperlinkInsertPicture" />
+      <MemberSignature Language="VB.NET" Value="msoCommandBarButtonHyperlinkInsertPicture" />
+      <MemberSignature Language="C++ CLI" Value="msoCommandBarButtonHyperlinkInsertPicture" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType</ReturnType>
+      </ReturnValue>
+      <MemberValue>2</MemberValue>
+      <Docs>
+        <summary>Um clique no botão da barra de comandos insere uma imagem no ponto de seleção ativo.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoCommandBarButtonHyperlinkNone">
+      <MemberSignature Language="C#" Value="msoCommandBarButtonHyperlinkNone" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType msoCommandBarButtonHyperlinkNone = int32(0)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType.msoCommandBarButtonHyperlinkNone" />
+      <MemberSignature Language="VB.NET" Value="msoCommandBarButtonHyperlinkNone" />
+      <MemberSignature Language="C++ CLI" Value="msoCommandBarButtonHyperlinkNone" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType</ReturnType>
+      </ReturnValue>
+      <MemberValue>0</MemberValue>
+      <Docs>
+        <summary>O botão da barra de comandos não é um hiperlink.</summary>
+      </Docs>
+    </Member>
+    <Member MemberName="msoCommandBarButtonHyperlinkOpen">
+      <MemberSignature Language="C#" Value="msoCommandBarButtonHyperlinkOpen" />
+      <MemberSignature Language="ILAsm" Value=".field public static literal valuetype Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType msoCommandBarButtonHyperlinkOpen = int32(1)" />
+      <MemberSignature Language="DocId" Value="F:Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType.msoCommandBarButtonHyperlinkOpen" />
+      <MemberSignature Language="VB.NET" Value="msoCommandBarButtonHyperlinkOpen" />
+      <MemberSignature Language="C++ CLI" Value="msoCommandBarButtonHyperlinkOpen" />
+      <MemberType>Field</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCommandBarButtonHyperlinkType</ReturnType>
+      </ReturnValue>
+      <MemberValue>1</MemberValue>
+      <Docs>
+        <summary>Um clique no botão da barra de comandos abre o link especificado na propriedade <b>TooltipText</b> desse botão.</summary>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
