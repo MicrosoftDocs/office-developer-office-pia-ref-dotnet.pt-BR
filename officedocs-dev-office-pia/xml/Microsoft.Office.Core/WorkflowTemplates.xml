@@ -1,0 +1,269 @@
+<Type Name="WorkflowTemplates" FullName="Microsoft.Office.Core.WorkflowTemplates">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="6335f5f613620ac3f1b03528dcde31dd4c835f97" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656777" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface WorkflowTemplates : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract WorkflowTemplates implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.WorkflowTemplates" />
+  <TypeSignature Language="VB.NET" Value="Public Interface WorkflowTemplates&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class WorkflowTemplates : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CD903-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="75a75-101">Representa uma coleção de <see cref="T:Microsoft.Office.Core.WorkflowTemplate" /> objetos.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="75a75-101">Represents a collection of <see cref="T:Microsoft.Office.Core.WorkflowTemplate" /> objects.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.WorkflowTemplates.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="75a75-102">Obtém um objeto <b>Application</b> que representa o aplicativo de contêiner para o <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-102">Gets an <b>Application</b> object that represents the container application for the <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> object.</span>
+          </span>
+          <span data-ttu-id="75a75-103">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-103">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="75a75-104">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-104">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.WorkflowTemplates.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="75a75-p102">Obtém um <b>Long</b> que indica o número de itens na coleção <b>WorkflowTemplates</b>. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-p102">Gets a <b>Long</b> indicating the number of items in the <b>WorkflowTemplates</b> collection. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="75a75-107">Long</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-107">Long</span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.WorkflowTemplates.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="75a75-108">Obtém um inteiro de 32 bits que indica o aplicativo no qual o <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-108">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> object was created.</span>
+          </span>
+          <span data-ttu-id="75a75-109">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-109">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="75a75-110">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-110">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.WorkflowTemplates.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.WorkflowTemplate this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.WorkflowTemplate Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.WorkflowTemplates.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As WorkflowTemplate" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::WorkflowTemplate ^ default[int] { Microsoft::Office::Core::WorkflowTemplate ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.WorkflowTemplate</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <span data-ttu-id="75a75-111">O número de índice do objeto <b>WorkflowTemplate</b> a ser retornado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-111">The index number of the <b>WorkflowTemplate</b> object to be returned.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="75a75-112">Obtém um <see cref="T:Microsoft.Office.Core.WorkflowTemplate" /> objeto do <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> conjunto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-112">Gets a <see cref="T:Microsoft.Office.Core.WorkflowTemplate" /> object from the <see cref="T:Microsoft.Office.Core.WorkflowTemplates" /> collection.</span>
+          </span>
+          <span data-ttu-id="75a75-113">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-113">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="75a75-114">
+            <b>WorkflowTemplate</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="75a75-114">
+              <b>WorkflowTemplate</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

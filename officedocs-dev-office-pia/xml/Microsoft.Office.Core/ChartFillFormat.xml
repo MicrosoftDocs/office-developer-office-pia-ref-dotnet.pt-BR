@@ -1,0 +1,1213 @@
+<Type Name="ChartFillFormat" FullName="Microsoft.Office.Core.ChartFillFormat">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ad17fe9c58844222d4104928f8ff92c37a542796" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20657233" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface ChartFillFormat" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract ChartFillFormat" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.ChartFillFormat" />
+  <TypeSignature Language="VB.NET" Value="Public Interface ChartFillFormat" />
+  <TypeSignature Language="C++ CLI" Value="public interface class ChartFillFormat" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C171C-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="ca071-p101">Usado somente com gráficos. Representa formatação de preenchimento para elementos gráficos.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca071-p101">Used only with charts. Represents fill formatting for chart elements.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="ca071-103">
+        <para>Use o <see cref="T:Microsoft.Office.Core.ChartFillFormat" /> propriedade para retornar um <see cref="T:Microsoft.Office.Core.ChartFillFormat" /> objeto.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="ca071-103">
+          <para>Use the <see cref="T:Microsoft.Office.Core.ChartFillFormat" /> property to return a <see cref="T:Microsoft.Office.Core.ChartFillFormat" /> object.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(148)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-104">Retorna um objeto <b>Application</b> que representa o aplicativo de contêiner para o objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-104">Returns an <b>Application</b> object that represents the container application for the object.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-105">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-105">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BackColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ChartColorFormat BackColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ChartColorFormat BackColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.BackColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BackColor As ChartColorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ChartColorFormat ^ BackColor { Microsoft::Office::Core::ChartColorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743816)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ChartColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-106">Retorna ou define a cor de plano de fundo do preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-106">Returns or sets the fill background color.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ChartColorFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(149)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p102">Retorna um número inteiro de 32 bits que indica o aplicativo em que esse objeto foi criado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p102">Returns a 32-bit integer that indicates the application in which this object was created. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-109">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-109">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ForeColor">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.ChartColorFormat ForeColor { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.ChartColorFormat ForeColor" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.ForeColor" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ForeColor As ChartColorFormat" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::ChartColorFormat ^ ForeColor { Microsoft::Office::Core::ChartColorFormat ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743817)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743817)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.ChartColorFormat</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-110">Retorna ou define o preenchimento de primeiro plano ou uma cor sólida.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-110">Returns or sets the foreground fill or solid color.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.ChartColorFormat" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientColorType">
+      <MemberSignature Language="C#" Value="public int GradientColorType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GradientColorType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.GradientColorType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientColorType As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GradientColorType { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743818)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-111">Retorna o tipo de gradiente da cor para o preenchimento especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-111">Returns the gradient color type for the specified fill.</span>
+          </span>
+          <span data-ttu-id="ca071-112">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-112">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoGradientColorType" />
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-113">
+            <para>
+              <see cref="T:Microsoft.Office.Core.MsoGradientColorType" />é um valor de retorno apenas que indica uma combinação dos outros estados no intervalo especificado. Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" />, <see cref="P:Microsoft.Office.Core.ChartFillFormat.PresetGradientType" />, ou <see cref="M:Microsoft.Office.Core.ChartFillFormat.TwoColorGradient(System.Int32,System.Int32)" /> método para definir o tipo de gradiente para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-113">
+              <para>
+                <see cref="T:Microsoft.Office.Core.MsoGradientColorType" /> is a return value only which indicates a combination of the other states in the specified range. Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" />, <see cref="P:Microsoft.Office.Core.ChartFillFormat.PresetGradientType" />, or <see cref="M:Microsoft.Office.Core.ChartFillFormat.TwoColorGradient(System.Int32,System.Int32)" /> method to set the gradient type for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientDegree">
+      <MemberSignature Language="C#" Value="public float GradientDegree { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 GradientDegree" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.GradientDegree" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientDegree As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float GradientDegree { float get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743819)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743819)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-114">Retorna o grau do gradiente do preenchimento sombreado uma cor especificado como um valor de ponto flutuante de 0,0 (escuro) a 1,0 (claro).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-114">Returns the gradient degree of the specified one-color shaded fill as a floating-point value from 0.0 (dark) through 1.0 (light).</span>
+          </span>
+          <span data-ttu-id="ca071-115">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-115">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-116">
+            <b>Simples</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-116">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-117">
+            <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" /> método para definir o grau do gradiente para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-117">
+              <para>This property is read-only. Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" /> method to set the gradient degree for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientStyle">
+      <MemberSignature Language="C#" Value="public int GradientStyle { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GradientStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.GradientStyle" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientStyle As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GradientStyle { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743820)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-118">Retorna o estilo de gradiente para o preenchimento especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-118">Returns the gradient style for the specified fill.</span>
+          </span>
+          <span data-ttu-id="ca071-119">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-119">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GradientVariant">
+      <MemberSignature Language="C#" Value="public int GradientVariant { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 GradientVariant" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.GradientVariant" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property GradientVariant As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int GradientVariant { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743821)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743821)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-120">Retorna a variação de sombreado para o preenchimento especificado como um valor inteiro de 1 a 4.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-120">Returns the shade variant for the specified fill as an integer value from 1 through 4.</span>
+          </span>
+          <span data-ttu-id="ca071-121">Os valores dessa propriedade correspondem às variações de gradiente (numeradas da esquerda para a direita e de cima para baixo) na guia gradiente da caixa de diálogo Efeitos de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-121">The values for this property correspond to the gradient variants (numbered from left to right and from top to bottom) on the Gradient tab in the Fill Effects dialog box.</span>
+          </span>
+          <span data-ttu-id="ca071-122">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-122">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-123">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-123">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-124">
+            <para>Essa propriedade é somente leitura. Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" /> ou <see cref="M:Microsoft.Office.Core.ChartFillFormat.TwoColorGradient(System.Int32,System.Int32)" /> método para definir a variante de gradiente para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-124">
+              <para>This property is read-only. Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" /> or <see cref="M:Microsoft.Office.Core.ChartFillFormat.TwoColorGradient(System.Int32,System.Int32)" /> method to set the gradient variant for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OneColorGradient">
+      <MemberSignature Language="C#" Value="public void OneColorGradient (int Style, int Variant, float Degree);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void OneColorGradient([in]int32 Style, [in]int32 Variant, [in]float32 Degree) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.OneColorGradient(System.Int32,System.Int32,System.Single)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub OneColorGradient (Style As Integer, Variant As Integer, Degree As Single)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void OneColorGradient(int Style, int Variant, float Degree);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Variant" Type="System.Int32" />
+        <Parameter Name="Degree" Type="System.Single" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="ca071-125">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-125">Required <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          </span>
+          <span data-ttu-id="ca071-126">O estilo do gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-126">The gradient style.</span>
+          </span>
+        </param>
+        <param name="Variant">
+          <span data-ttu-id="ca071-127">
+            <b>Integer</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-127">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-128">A variante de gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-128">The gradient variant.</span>
+          </span>
+          <span data-ttu-id="ca071-129">Pode ser um valor de 1 a 4, correspondendo a uma das quatro variantes na guia gradiente na caixa de diálogo efeitos de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-129">Can be a value from 1 through 4, corresponding to one of the four variants on the Gradient tab in the Fill Effects dialog box.</span>
+          </span>
+          <span data-ttu-id="ca071-130">Se <paramref name="Style" /> é <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, o <paramref name="Variant" /> argumento só poderá ser 1 ou 2.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-130">If <paramref name="Style" /> is <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, the <paramref name="Variant" /> argument can only be 1 or 2.</span>
+          </span>
+        </param>
+        <param name="Degree">
+          <span data-ttu-id="ca071-131">
+            <b>Single</b>obrigatório.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-131">Required <b>Single</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-132">A intensidade do gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-132">The gradient degree.</span>
+          </span>
+          <span data-ttu-id="ca071-133">Pode ser um valor de 0,0 (escuro) a 1,0 (claro).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-133">Can be a value from 0.0 (dark) through 1.0 (light).</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-134">Define o preenchimento especificado como gradiente de uma cor.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-134">Sets the specified fill to a one-color gradient.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(150)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p110">Retorna o objeto pai para o objeto especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p110">Returns the parent object for the specified object. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-137">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-137">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Pattern">
+      <MemberSignature Language="C#" Value="public int Pattern { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Pattern" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Pattern" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Pattern As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Pattern { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743822)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-138">Retorna ou define o padrão de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-138">Returns or sets the fill pattern.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoPatternType" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Patterned">
+      <MemberSignature Language="C#" Value="public void Patterned (int Pattern);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Patterned([in]int32 Pattern) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.Patterned(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Patterned (Pattern As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Patterned(int Pattern);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743812)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Pattern" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Pattern">
+          <span data-ttu-id="ca071-139">Necessário <see cref="T:Microsoft.Office.Core.MsoPatternType" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-139">Required <see cref="T:Microsoft.Office.Core.MsoPatternType" />.</span>
+          </span>
+          <span data-ttu-id="ca071-140">O tipo de padrão.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-140">The type of pattern.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-141">Define o preenchimento especificado como um padrão.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-141">Sets the specified fill to a pattern.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresetGradient">
+      <MemberSignature Language="C#" Value="public void PresetGradient (int Style, int Variant, int PresetGradientType);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PresetGradient([in]int32 Style, [in]int32 Variant, [in]int32 PresetGradientType) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.PresetGradient(System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PresetGradient (Style As Integer, Variant As Integer, PresetGradientType As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetGradient(int Style, int Variant, int PresetGradientType);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743815)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Variant" Type="System.Int32" />
+        <Parameter Name="PresetGradientType" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="ca071-142">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-142">Required <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          </span>
+          <span data-ttu-id="ca071-143">O estilo do gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-143">The gradient style.</span>
+          </span>
+        </param>
+        <param name="Variant">
+          <span data-ttu-id="ca071-144">
+            <b>Integer</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-144">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-145">A variante de gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-145">The gradient variant.</span>
+          </span>
+          <span data-ttu-id="ca071-146">Pode ser um valor de 1 a 4, correspondendo a uma das quatro variantes na guia gradiente na caixa de diálogo efeitos de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-146">Can be a value from 1 through 4, corresponding to one of the four variants on the Gradient tab in the Fill Effects dialog box.</span>
+          </span>
+          <span data-ttu-id="ca071-147">Se <paramref name="Style" /> é <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, o <paramref name="Variant" /> argumento só poderá ser 1 ou 2.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-147">If <paramref name="Style" /> is <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, the <paramref name="Variant" /> argument can only be 1 or 2.</span>
+          </span>
+        </param>
+        <param name="PresetGradientType">To be added.</param>
+        <summary>
+          <span data-ttu-id="ca071-148">Define o preenchimento especificado como um gradiente predefinido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-148">Sets the specified fill to a preset gradient.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresetGradientType">
+      <MemberSignature Language="C#" Value="public int PresetGradientType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PresetGradientType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.PresetGradientType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetGradientType As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PresetGradientType { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743823)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743823)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p114">Retorna o tipo de gradiente predefinido para o preenchimento especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p114">Returns the preset gradient type for the specified fill. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoPresetGradientType" />
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-151">
+            <para>Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.PresetGradient(System.Int32,System.Int32,System.Int32)" /> método para definir o tipo de gradiente predefinido para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-151">
+              <para>Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.PresetGradient(System.Int32,System.Int32,System.Int32)" /> method to set the preset gradient type for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresetTexture">
+      <MemberSignature Language="C#" Value="public int PresetTexture { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 PresetTexture" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.PresetTexture" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PresetTexture As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int PresetTexture { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743824)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p115">Retorna à textura predefinida para o preenchimento especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p115">Returns the preset texture for the specified fill. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-154">
+            <para>Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.PresetTextured(System.Int32)" /> método para definir a textura predefinida para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-154">
+              <para>Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.PresetTextured(System.Int32)" /> method to set the preset texture for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PresetTextured">
+      <MemberSignature Language="C#" Value="public void PresetTextured (int PresetTexture);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void PresetTextured([in]int32 PresetTexture) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.PresetTextured(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub PresetTextured (PresetTexture As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void PresetTextured(int PresetTexture);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743810)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PresetTexture" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="PresetTexture">
+          <span data-ttu-id="ca071-155">Necessário <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-155">Required <see cref="T:Microsoft.Office.Core.MsoPresetTexture" />.</span>
+          </span>
+          <span data-ttu-id="ca071-156">O tipo de textura a ser aplicado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-156">The type of texture to apply.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-157">Define o formato de preenchimento especificado como uma textura pré-definida.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-157">Sets the specified fill format to a preset texture.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Solid">
+      <MemberSignature Language="C#" Value="public void Solid ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Solid() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.Solid" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Solid ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Solid();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743811)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p117">Define o preenchimento especificado como uma cor uniforme. Use este método para converter um preenchimento gradual, texturizado, padronizado ou de plano de fundo em um preenchimento sólido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p117">Sets the specified fill to a uniform color. Use this method to convert a gradient, textured, patterned, or background fill back to a solid fill.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextureName">
+      <MemberSignature Language="C#" Value="public string TextureName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string TextureName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.TextureName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ TextureName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743825)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743825)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p118">Retorna o nome do arquivo de textura personalizado do preenchimento especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p118">Returns the name of the custom texture file for the specified fill. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="ca071-162">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-162">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-163">
+            <para>Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> ou <see cref="M:Microsoft.Office.Core.FillFormat.UserTextured(System.String)" /> método para definir o arquivo de textura para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-163">
+              <para>Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> or <see cref="M:Microsoft.Office.Core.FillFormat.UserTextured(System.String)" /> method to set the texture file for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TextureType">
+      <MemberSignature Language="C#" Value="public int TextureType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 TextureType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.TextureType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property TextureType As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int TextureType { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743826)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-p119">Retorna o tipo de textura do preenchimento especificado. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-p119">Returns the texture type for the specified fill. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTextureType" />
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-166">
+            <para>Use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserTextured(System.String)" /> método para definir o tipo de textura para o preenchimento.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-166">
+              <para>Use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserTextured(System.String)" /> method to set the texture type for the fill.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="TwoColorGradient">
+      <MemberSignature Language="C#" Value="public void TwoColorGradient (int Style, int Variant);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void TwoColorGradient([in]int32 Style, [in]int32 Variant) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.TwoColorGradient(System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub TwoColorGradient (Style As Integer, Variant As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void TwoColorGradient(int Style, int Variant);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Style" Type="System.Int32" />
+        <Parameter Name="Variant" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Style">
+          <span data-ttu-id="ca071-167">Necessário <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-167">Required <see cref="T:Microsoft.Office.Core.MsoGradientStyle" />.</span>
+          </span>
+          <span data-ttu-id="ca071-168">O estilo do gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-168">The gradient style.</span>
+          </span>
+        </param>
+        <param name="Variant">
+          <span data-ttu-id="ca071-169">
+            <b>Integer</b>necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-169">Required <b>Integer</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-170">A variante de gradiente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-170">The gradient variant.</span>
+          </span>
+          <span data-ttu-id="ca071-171">Pode ser um valor de 1 a 4, correspondendo a uma das quatro variantes na guia gradiente na caixa de diálogo efeitos de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-171">Can be a value from 1 through 4, corresponding to one of the four variants on the Gradient tab in the Fill Effects dialog box.</span>
+          </span>
+          <span data-ttu-id="ca071-172">Se <paramref name="Style" /> é <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, o <paramref name="Variant" /> argumento só poderá ser 1 ou 2.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-172">If <paramref name="Style" /> is <see cref="F:Microsoft.Office.Core.MsoGradientStyle.msoGradientFromCenter" />, the <paramref name="Variant" /> argument can only be 1 or 2.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-173">Define o preenchimento especificado como gradiente de duas cores.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-173">Sets the specified fill to a two-color gradient.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Type">
+      <MemberSignature Language="C#" Value="public int Type { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Type" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Type" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Type As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Type { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743827)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743827)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-174">Retorna o tipo de preenchimento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-174">Returns the fill type.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoFillType" />
+        </value>
+        <remarks>
+          <span data-ttu-id="ca071-175">
+            <para>Essa propriedade também pode retornar <see cref="F:Microsoft.Office.Core.XlConstants.xlAutomatic" /> ou <see cref="F:Microsoft.Office.Core.XlConstants.xlNone" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-175">
+              <para>This property can also return <see cref="F:Microsoft.Office.Core.XlConstants.xlAutomatic" /> or <see cref="F:Microsoft.Office.Core.XlConstants.xlNone" />. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserPicture">
+      <MemberSignature Language="C#" Value="public void UserPicture (object PictureFile, object PictureFormat, object PictureStackUnit, object PicturePlacement);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UserPicture([in]object PictureFile, [in]object PictureFormat, [in]object PictureStackUnit, [in]object PicturePlacement) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UserPicture (PictureFile As Object, PictureFormat As Object, PictureStackUnit As Object, PicturePlacement As Object)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserPicture(System::Object ^ PictureFile, System::Object ^ PictureFormat, System::Object ^ PictureStackUnit, System::Object ^ PicturePlacement);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743813)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="PictureFile" Type="System.Object" />
+        <Parameter Name="PictureFormat" Type="System.Object" />
+        <Parameter Name="PictureStackUnit" Type="System.Object" />
+        <Parameter Name="PicturePlacement" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="PictureFile">
+          <span data-ttu-id="ca071-176">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-176">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-177">O nome de arquivo da imagem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-177">The filename of the image.</span>
+          </span>
+        </param>
+        <param name="PictureFormat">
+          <span data-ttu-id="ca071-178">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-178">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-179">Um <see cref="T:Microsoft.Office.Core.XlChartPictureType" /> valor que indica o formato da imagem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-179">An <see cref="T:Microsoft.Office.Core.XlChartPictureType" /> value that indicates the format of the picture.</span>
+          </span>
+        </param>
+        <param name="PictureStackUnit">
+          <span data-ttu-id="ca071-180">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-180">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-181">Um valor <b>Double</b> que especifica a unidade de escala ou pilha de imagens (depende do <paramref name="PictureFormat" /> argumento).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-181">A <b>Double</b> value that specifies the picture stack or scale unit (depends on the <paramref name="PictureFormat" /> argument).</span>
+          </span>
+        </param>
+        <param name="PicturePlacement">
+          <span data-ttu-id="ca071-182">
+            <b>Objeto</b>de opcional.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-182">Optional <b>Object</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-183">Um valor <b>XlChartPicturePlacement</b> que indica o posicionamento da imagem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-183">An <b>XlChartPicturePlacement</b> value that indicates the placement of the picture.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-184">Preenche a forma especificada com uma imagem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-184">Fills the specified shape with an image.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="UserTextured">
+      <MemberSignature Language="C#" Value="public void UserTextured (string TextureFile);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void UserTextured([in]string TextureFile) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.ChartFillFormat.UserTextured(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub UserTextured (TextureFile As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void UserTextured(System::String ^ TextureFile);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743814)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="TextureFile" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="TextureFile">
+          <span data-ttu-id="ca071-185">
+            <b>String</b> necessário.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-185">Required <b>String</b>.</span>
+          </span>
+          <span data-ttu-id="ca071-186">O nome do arquivo da imagem.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-186">The name of the picture file.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="ca071-187">Preenche a forma especificada com várias imagens pequenas lado a lado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-187">Fills the specified shape with small tiles of an image.</span>
+          </span>
+          <span data-ttu-id="ca071-188">Se você desejar preencher a forma com uma imagem grande, use o <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> método.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-188">If you want to fill the shape with one large image, use the <see cref="M:Microsoft.Office.Core.ChartFillFormat.UserPicture(System.Object,System.Object,System.Object,System.Object)" /> method.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Visible">
+      <MemberSignature Language="C#" Value="public int Visible { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Visible" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.ChartFillFormat.Visible" />
+      <MemberSignature Language="VB.NET" Value="Public Property Visible As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Visible { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610743828)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="ca071-189">Retorna ou define um <see cref="T:Microsoft.Office.Core.MsoTriState" /> valor que determina se o objeto está visível.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-189">Returns or sets a <see cref="T:Microsoft.Office.Core.MsoTriState" /> value that determines whether the object is visible.</span>
+          </span>
+          <span data-ttu-id="ca071-190">Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="ca071-190">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoTriState" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
