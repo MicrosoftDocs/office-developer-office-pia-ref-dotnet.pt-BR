@@ -1,0 +1,534 @@
+<Type Name="SmartArt" FullName="Microsoft.Office.Core.SmartArt">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="ffa21ced8c5452789aaafea61e588b3e6a37e661" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656331" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SmartArt : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SmartArt implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SmartArt" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SmartArt&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SmartArt : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03C6-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="18d79-101">A classe de nível superior para interação com um gráfico SmartArt.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="18d79-101">The top level class for interacting with a SmartArt graphic.</span>
+      </span>
+      <span data-ttu-id="18d79-102">Especifica as constantes que definem os tipos dos nós do SmartArt.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="18d79-102">Specifies constants that define the types of SmartArt nodes.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AllNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SmartArtNodes AllNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SmartArtNodes AllNodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.AllNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property AllNodes As SmartArtNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArtNodes ^ AllNodes { Microsoft::Office::Core::SmartArtNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SmartArtNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-103">Obtém um <see cref="T:Microsoft.Office.Core.SmartArtNodes" /> objeto que contém todos os nós dentro do diagrama SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-103">Gets a <see cref="T:Microsoft.Office.Core.SmartArtNodes" /> object containing all of the nodes within the SmartArt diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-104">
+            <para>Os nós são recuperados em ordem, independentemente do modelo de dados. Por exemplo, o modelo de dados a seguir seria recuperar os nós em uma ordem, B, C, D, F, F.</para>
+            <list type="bullet">
+              <item>
+                <para>A</para>
+              </item>
+              <item>
+                <para>F</para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-104">
+              <para>The nodes are retrieved in order, independent of data model. For example, the following data model would retrieve the nodes in order A, B, C, D, E, F.</para>
+              <list type="bullet">
+                <item>
+                  <para>A</para>
+                </item>
+                <item>
+                  <para>F</para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-105">Obtém um <see cref="T:System.Object" /> object que representa o aplicativo de contêiner para o objeto <b>SmartArt</b> .</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-105">Gets a <see cref="T:System.Object" /> object that represents the container application for the <b>SmartArt</b> object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-106">
+            <para>Somente leitura.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-106">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Color">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SmartArtColor Color { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SmartArtColor Color" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Color" />
+      <MemberSignature Language="VB.NET" Value="Public Property Color As SmartArtColor" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArtColor ^ Color { Microsoft::Office::Core::SmartArtColor ^ get(); void set(Microsoft::Office::Core::SmartArtColor ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SmartArtColor</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-107">Obtém ou define o estilo de cor do Smart Art aplicado ao elemento gráfico Smart Art.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-107">Gets or sets the Smart Art color style applied to the Smart Art graphic.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-108">
+            <para>Leitura/gravação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-108">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-109">Obtém um inteiro de 32 bits que indica o aplicativo no qual o objeto <b>SmartArt</b> foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-109">Gets a 32-bit integer that indicates the application in which the <b>SmartArt</b> object was created.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-110">
+            <para>Somente leitura.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-110">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Layout">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SmartArtLayout Layout { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SmartArtLayout Layout" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Layout" />
+      <MemberSignature Language="VB.NET" Value="Public Property Layout As SmartArtLayout" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArtLayout ^ Layout { Microsoft::Office::Core::SmartArtLayout ^ get(); void set(Microsoft::Office::Core::SmartArtLayout ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SmartArtLayout</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-111">Obtém ou define o layout Smart Art associado com o gráfico Smart Art.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-111">Gets or sets the Smart Art layout associated with the Smart Art graphic.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-112">
+            <para>Leitura/gravação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-112">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Nodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SmartArtNodes Nodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SmartArtNodes Nodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Nodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Nodes As SmartArtNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArtNodes ^ Nodes { Microsoft::Office::Core::SmartArtNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SmartArtNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-113">Obtém os filhos do nó raiz do diagrama SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-113">Gets the children of the root node of the SmartArt diagram.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-114">
+            <para>Somente leitura. O nó raiz não tem nenhum nó pai e contém apenas os filhos se há filhos presentes no modelo de dados do gráfico SmartArt. No exemplo a seguir, os nós A e F serão retornados.</para>
+            <list type="bullet">
+              <item>
+                <para>A</para>
+              </item>
+              <item>
+                <para>F</para>
+              </item>
+            </list>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-114">
+              <para>Read-only. The root node has no parent node and only contains children if there are children present in the SmartArt graphic’s data model. In the following example, the nodes A and F will be returned.</para>
+              <list type="bullet">
+                <item>
+                  <para>A</para>
+                </item>
+                <item>
+                  <para>F</para>
+                </item>
+              </list>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-115">Obtém o objeto de chamada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-115">Gets the calling object.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-116">
+            <para>Somente leitura.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-116">
+              <para>Read-only.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="QuickStyle">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SmartArtQuickStyle QuickStyle { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SmartArtQuickStyle QuickStyle" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.QuickStyle" />
+      <MemberSignature Language="VB.NET" Value="Public Property QuickStyle As SmartArtQuickStyle" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SmartArtQuickStyle ^ QuickStyle { Microsoft::Office::Core::SmartArtQuickStyle ^ get(); void set(Microsoft::Office::Core::SmartArtQuickStyle ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SmartArtQuickStyle</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-117">Obtém ou define o estilo rápido de SmartArt aplicado ao elemento gráfico SmartArt.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-117">Gets or sets the SmartArt quick style applied to the SmartArt graphic.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-118">
+            <para>Leitura/gravação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-118">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reset">
+      <MemberSignature Language="C#" Value="public void Reset ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Reset() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SmartArt.Reset" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Reset ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Reset();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(8)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-119">Reconfigura o gráfico SmartArt ao seu estado original.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-119">Resets the SmartArt graphic to its original state.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="18d79-120">
+            <para>Essa ação espelha a funcionalidade apresentada pelo botão Redefinir gráfico na guia Design para SmartArt.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-120">
+              <para>This action mirrors the functionality presented by the Reset Graphic button under the Design tab for SmartArt.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Reverse">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoTriState Reverse { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoTriState Reverse" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SmartArt.Reverse" />
+      <MemberSignature Language="VB.NET" Value="Public Property Reverse As MsoTriState" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoTriState Reverse { Microsoft::Office::Core::MsoTriState get(); void set(Microsoft::Office::Core::MsoTriState value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(7)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoTriState</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="18d79-121">Obtém ou define o estado do diagrama SmartArt com relação ao sentido da esquerda para a direita ou da direita para a esquerda, se o diagrama tiver suporte para reversão.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-121">Gets or sets the state of the SmartArt diagram with regard to (left-to-right) LTR or (right-to-left) RTL, if the diagram supports reversal.</span>
+          </span>
+        </summary>
+        <value>To be added.</value>
+        <remarks>
+          <span data-ttu-id="18d79-122">
+            <para>Leitura/gravação.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="18d79-122">
+              <para>Read/write.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,310 @@
+<Type Name="RulerLevel2" FullName="Microsoft.Office.Core.RulerLevel2">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="7ecdc4166a4ef3416a56bd35fd7e90c2ca7e947d" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656358" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface RulerLevel2 : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract RulerLevel2 implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.RulerLevel2" />
+  <TypeSignature Language="VB.NET" Value="Public Interface RulerLevel2&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class RulerLevel2 : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03C3-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="685fb-101">Contém informações sobre o recuo de primeira linha e deslocado para um nível da estrutura de tópicos.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="685fb-101">Contains first-line indent and hanging indent information for an outline level.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="685fb-102">
+        <para>O <see cref="T:Microsoft.Office.Core.RulerLevel2" /> objeto é um membro do <see cref="T:Microsoft.Office.Core.RulerLevels2" /> conjunto. O <see cref="T:Microsoft.Office.Core.RulerLevels2" /> coleção contém um <see cref="T:Microsoft.Office.Core.RulerLevel2" /> objeto para cada um dos cinco níveis de estrutura de tópicos disponíveis.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="685fb-102">
+          <para>The <see cref="T:Microsoft.Office.Core.RulerLevel2" /> object is a member of the <see cref="T:Microsoft.Office.Core.RulerLevels2" /> collection. The <see cref="T:Microsoft.Office.Core.RulerLevels2" /> collection contains a <see cref="T:Microsoft.Office.Core.RulerLevel2" /> object for each of the five available outline levels.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.RulerLevel2.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="685fb-103">Obtém um objeto <b>Application</b> que representa o aplicativo de contêiner para o <see cref="T:Microsoft.Office.Core.RulerLevel2" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-103">Gets an <b>Application</b> object that represents the container application for the <see cref="T:Microsoft.Office.Core.RulerLevel2" /> object.</span>
+          </span>
+          <span data-ttu-id="685fb-104">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-104">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="685fb-105">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-105">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.RulerLevel2.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="685fb-106">Obtém um inteiro de 32 bits que indica o aplicativo no qual o <see cref="T:Microsoft.Office.Core.RulerLevel2" /> objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-106">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core.RulerLevel2" /> object was created.</span>
+          </span>
+          <span data-ttu-id="685fb-107">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-107">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="685fb-108">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-108">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstMargin">
+      <MemberSignature Language="C#" Value="public float FirstMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 FirstMargin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.RulerLevel2.FirstMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property FirstMargin As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float FirstMargin { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="685fb-p103">Obtém ou define o recuo da primeira linha para o nível da estrutura de tópicos especificado, em pontos. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-p103">Gets or sets the first-line indent for the specified outline level, in points. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="685fb-111">
+            <b>Simples</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-111">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="685fb-112">
+            <para>Se um parágrafo começa com um marcador, a posição do marcador é determinada pelo <see cref="P:Microsoft.Office.Core.RulerLevel2.FirstMargin" /> propriedade e a posição do primeiro caractere do texto no parágrafo é determinada pelo <see cref="P:Microsoft.Office.Core.RulerLevel2.LeftMargin" /> propriedade.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-112">
+              <para>If a paragraph begins with a bullet, the bullet position is determined by the <see cref="P:Microsoft.Office.Core.RulerLevel2.FirstMargin" /> property, and the position of the first text character in the paragraph is determined by the <see cref="P:Microsoft.Office.Core.RulerLevel2.LeftMargin" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LeftMargin">
+      <MemberSignature Language="C#" Value="public float LeftMargin { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance float32 LeftMargin" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.RulerLevel2.LeftMargin" />
+      <MemberSignature Language="VB.NET" Value="Public Property LeftMargin As Single" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property float LeftMargin { float get(); void set(float value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Single</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="685fb-p104">Obtém ou define o recuo à esquerda para o nível da estrutura de tópicos especificado, em pontos. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-p104">Gets or sets the left indent for the specified outline level, in points. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="685fb-115">
+            <b>Simples</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-115">
+              <b>Single</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="685fb-116">
+            <para>Se um parágrafo começa com um marcador, a posição do marcador é determinada pelo <see cref="P:Microsoft.Office.Core.RulerLevel2.FirstMargin" /> propriedade e a posição do primeiro caractere do texto no parágrafo é determinada pelo <see cref="P:Microsoft.Office.Core.RulerLevel2.LeftMargin" /> propriedade.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-116">
+              <para>If a paragraph begins with a bullet, the bullet position is determined by the <see cref="P:Microsoft.Office.Core.RulerLevel2.FirstMargin" /> property, and the position of the first text character in the paragraph is determined by the <see cref="P:Microsoft.Office.Core.RulerLevel2.LeftMargin" /> property.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.RulerLevel2.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="685fb-117">Obtém o objeto pai para o <see cref="T:Microsoft.Office.Core.RulerLevel2" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-117">Gets the parent object for the <see cref="T:Microsoft.Office.Core.RulerLevel2" /> object.</span>
+          </span>
+          <span data-ttu-id="685fb-118">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-118">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="685fb-119">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="685fb-119">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

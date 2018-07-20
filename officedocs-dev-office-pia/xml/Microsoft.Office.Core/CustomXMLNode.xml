@@ -1,0 +1,1496 @@
+<Type Name="CustomXMLNode" FullName="Microsoft.Office.Core.CustomXMLNode">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="bf745aff799d7f2e6ef599bbb549cfbdeb5ce457" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656735" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface CustomXMLNode : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract CustomXMLNode implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.CustomXMLNode" />
+  <TypeSignature Language="VB.NET" Value="Public Interface CustomXMLNode&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class CustomXMLNode : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CDB04-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="179df-101">Representa um nó XML em uma árvore em um documento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="179df-101">Represents an XML node in a tree in a document.</span>
+      </span>
+      <span data-ttu-id="179df-102">O <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto é um membro do <see cref="T:Microsoft.Office.Core.CustomXMLNodes" /> conjunto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="179df-102">The <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object is a member of the <see cref="T:Microsoft.Office.Core.CustomXMLNodes" /> collection.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="179df-103">
+        <para>O <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto foi projetado para ter paridade situação com a interface <b>IXMLDOMNode</b> . Além disso, ele contém uma <see cref="P:Microsoft.Office.Core.CustomXMLNode.XPath" /> a propriedade que é uma ótima melhoria sobre os objetos fornecidos pelo MSXML.</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="179df-103">
+          <para>The <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object is designed to have funtional parity with the <b>IXMLDOMNode</b> interface. In addition, it contains an <see cref="P:Microsoft.Office.Core.CustomXMLNode.XPath" /> property which is a great improvement over the objects  provided by MSXML.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AppendChildNode">
+      <MemberSignature Language="C#" Value="public void AppendChildNode (string Name = &quot;&quot;, string NamespaceURI = &quot;&quot;, Microsoft.Office.Core.MsoCustomXMLNodeType NodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, string NodeValue = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendChildNode([in]string Name, [in]string NamespaceURI, [in]valuetype Microsoft.Office.Core.MsoCustomXMLNodeType NodeType, [in]string NodeValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.AppendChildNode(System.String,System.String,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendChildNode (Optional Name As String = &quot;&quot;, Optional NamespaceURI As String = &quot;&quot;, Optional NodeType As MsoCustomXMLNodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, Optional NodeValue As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="NamespaceURI" Type="System.String" />
+        <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoCustomXMLNodeType" />
+        <Parameter Name="NodeValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <span data-ttu-id="179df-104">Representa o nome de base do elemento a ser anexado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-104">Represents the base name of the element to be appended.</span>
+          </span>
+        </param>
+        <param name="NamespaceURI">
+          <span data-ttu-id="179df-105">Representa o namespace do elemento a ser anexado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-105">Represents the namespace of the element to be appended.</span>
+          </span>
+          <span data-ttu-id="179df-106">Este parâmetro é necessário para acrescentar nós do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> ou <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, caso contrário, ele será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-106">This parameter is required to append nodes of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> or <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, otherwise it is ignored.</span>
+          </span>
+        </param>
+        <param name="NodeType">
+          <span data-ttu-id="179df-107">Especifica o tipo de nó a ser anexado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-107">Specifies the type of node to append.</span>
+          </span>
+          <span data-ttu-id="179df-108">Se o parâmetro não for especificado, presume-se para ser do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-108">If the parameter is not specified, it is assumed to be of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          </span>
+        </param>
+        <param name="NodeValue">
+          <span data-ttu-id="179df-p104">Utilizado para definir o valor do nó anexado para os nós que permitem texto. Se o nó não permitir texto, o parâmetro será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p104">Used to set the value of the appended node for those nodes that allow text. If the node doesn’t allow text, the parameter is ignored.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-111">Anexa um único nó como último filho no nó do elemento contexto na árvore.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-111">Appends a single node as the last child under the context element node in the tree.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-112">
+            <para>Se o nó de contexto for qualquer tipo diferente de <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, ou se a operação for resultar em uma estrutura inválida de árvore, a ação de anexar não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-112">
+              <para>If the context node is any type other than <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, or if the operation would result in an invalid tree structure, the append is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="AppendChildSubtree">
+      <MemberSignature Language="C#" Value="public void AppendChildSubtree (string XML);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AppendChildSubtree([in]string XML) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.AppendChildSubtree(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AppendChildSubtree (XML As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void AppendChildSubtree(System::String ^ XML);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809364)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XML" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XML">
+          <span data-ttu-id="179df-113">Representa a subárvore a adicionar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-113">Represents the subtree to add.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-114">Adiciona uma subárvore como último filho no nó do elemento contexto na árvore.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-114">Adds a subtree as the last child under the context element node in the tree.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-115">
+            <para>Se o nó de contexto for qualquer tipo diferente de <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, a operação append não será realizada e será exibida uma mensagem de erro.  Se o <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> está sendo validado contra um esquema e se a operação for resultar em uma estrutura inválida de árvore, a operação append não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-115">
+              <para>If the context node is any type other than <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, the append operation is not performed and an error message is displayed.  If the <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> is being validated against a schema and if the operation would result in an invalid tree structure,  the append operation is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-116">Obtém um objeto <b>Application</b> que representa o aplicativo de contêiner para um <see cref="T:Microsoft.Office.Core.CustomXMLNode" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-116">Gets an <b>Application</b> object that represents the container application for a <see cref="T:Microsoft.Office.Core.CustomXMLNode" />.</span>
+          </span>
+          <span data-ttu-id="179df-117">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-117">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-118">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-118">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Attributes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNodes Attributes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNodes Attributes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.Attributes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Attributes As CustomXMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNodes ^ Attributes { Microsoft::Office::Core::CustomXMLNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-119">Obtém um <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> coleção que representa os atributos do elemento atual no nó atual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-119">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> collection representing the attributes of the current element in the current node.</span>
+          </span>
+          <span data-ttu-id="179df-120">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-120">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNodes" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BaseName">
+      <MemberSignature Language="C#" Value="public string BaseName { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string BaseName" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.BaseName" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BaseName As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ BaseName { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p107">Obtém o nome de base do nó sem o prefixo do namespace, se existir, no Document Object Model (DOM). Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p107">Gets the base name of the node without the namespace prefix, if one exists, in the Document Object Model (DOM). Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-123">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-123">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>
+          <span data-ttu-id="179df-124">
+            <para>Este é o membro padrão do <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-124">
+              <para>This is the default member of <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ChildNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNodes ChildNodes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNodes ChildNodes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.ChildNodes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ChildNodes As CustomXMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNodes ^ ChildNodes { Microsoft::Office::Core::CustomXMLNodes ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNodes</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-125">Obtém um <see cref="T:Microsoft.Office.Core.CustomXMLNodes" /> coleção que contém todos os elementos filho do nó atual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-125">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLNodes" /> collection containing all of the child elements of the current node.</span>
+          </span>
+          <span data-ttu-id="179df-126">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-126">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNodes" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-127">Obtém um inteiro de 32 bits que indica o aplicativo no qual o <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-127">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object  was created.</span>
+          </span>
+          <span data-ttu-id="179df-128">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-128">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-129">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-129">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-130">Exclui o nó atual da árvore (incluindo todos os seus filhos, se houver).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-130">Deletes the current node from the tree (including all of its children, if any exist).</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-131">
+            <para>Se a operação for resultar em uma estrutura inválida de árvore, a exclusão não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-131">
+              <para>If the operation would result in an invalid tree structure, the deletion is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="FirstChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode FirstChild { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode FirstChild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.FirstChild" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property FirstChild As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ FirstChild { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-132">Obtém um <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto correspondente para o primeiro elemento filho do nó atual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-132">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object corresponding to the first child element of the current node.</span>
+          </span>
+          <span data-ttu-id="179df-133">Se o nó não tem nenhum elemento filho (ou se ele não for do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />), retornará <b>Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-133">If the node has no child elements (or if it isn’t of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />), returns <b>Nothing</b>.</span>
+          </span>
+          <span data-ttu-id="179df-134">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-134">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="HasChildNodes">
+      <MemberSignature Language="C#" Value="public bool HasChildNodes ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool HasChildNodes() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.HasChildNodes" />
+      <MemberSignature Language="VB.NET" Value="Public Function HasChildNodes () As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool HasChildNodes();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-135">Retorna <b>True</b> se o nó do elemento atual tiver nós de elementos filhos.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-135">Returns <b>True</b> if the current element node has child element nodes.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="179df-136">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-136">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>
+          <span data-ttu-id="179df-137">
+            <para>Este método sempre retornará <b>False</b> quando <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> não é do tipo de nó <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-137">
+              <para>This method will always return <b>False</b> when <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> isn’t of node type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertNodeBefore">
+      <MemberSignature Language="C#" Value="public void InsertNodeBefore (string Name = &quot;&quot;, string NamespaceURI = &quot;&quot;, Microsoft.Office.Core.MsoCustomXMLNodeType NodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, string NodeValue = &quot;&quot;, Microsoft.Office.Core.CustomXMLNode NextSibling = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertNodeBefore([in]string Name, [in]string NamespaceURI, [in]valuetype Microsoft.Office.Core.MsoCustomXMLNodeType NodeType, [in]string NodeValue, [in]class Microsoft.Office.Core.CustomXMLNode NextSibling) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.InsertNodeBefore(System.String,System.String,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String,Microsoft.Office.Core.CustomXMLNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertNodeBefore (Optional Name As String = &quot;&quot;, Optional NamespaceURI As String = &quot;&quot;, Optional NodeType As MsoCustomXMLNodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, Optional NodeValue As String = &quot;&quot;, Optional NextSibling As CustomXMLNode = null)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="NamespaceURI" Type="System.String" />
+        <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoCustomXMLNodeType" />
+        <Parameter Name="NodeValue" Type="System.String" />
+        <Parameter Name="NextSibling" Type="Microsoft.Office.Core.CustomXMLNode" />
+      </Parameters>
+      <Docs>
+        <param name="Name">
+          <span data-ttu-id="179df-138">Representa o nome de base do nó a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-138">Represents the base name of the node to be added.</span>
+          </span>
+        </param>
+        <param name="NamespaceURI">
+          <span data-ttu-id="179df-139">Representa o namespace do elemento a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-139">Represents the namespace of the element to be added.</span>
+          </span>
+          <span data-ttu-id="179df-140">Este parâmetro é obrigatório se a adição de nós do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> ou <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, caso contrário, ele será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-140">This parameter is required if adding nodes of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> or <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, otherwise it is ignored.</span>
+          </span>
+        </param>
+        <param name="NodeType">
+          <span data-ttu-id="179df-141">Especifica o tipo do nó a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-141">Specifies the type of the node to be added.</span>
+          </span>
+          <span data-ttu-id="179df-142">Se o parâmetro não for especificado, será considerado como um nó do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-142">If the parameter is not specified, it is assumed to be a node of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          </span>
+        </param>
+        <param name="NodeValue">
+          <span data-ttu-id="179df-p113">Utilizado para definir o valor do nó a ser adicionado para os nós que permitem texto. Se o nó não permitir texto, o parâmetro será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p113">Used to set the value of the  node to be added for those nodes that allow text. If the node doesn’t allow text, the parameter is ignored.</span>
+          </span>
+        </param>
+        <param name="NextSibling">
+          <span data-ttu-id="179df-145">Representa o nó de contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-145">Represents the context node.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-146">Insere um novo nó de contexto antes do nó de contexto na árvore.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-146">Inserts a new node just before the context node in the tree.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-147">
+            <para>Se o nó de contexto não estiver presente, ao adicionar um nó do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeComment" />, ou <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeProcessingInstruction" />, o novo nó é adicionado ao último filho do nó de contexto. Se a operação for resultar em uma estrutura inválida de árvore, a inserção não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-147">
+              <para>If the context node is not present when adding a node of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />, <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeComment" />, or <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeProcessingInstruction" />, the new node is added to the last child of the context node. If the operation would result in an invalid tree structure, the insertion is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="InsertSubtreeBefore">
+      <MemberSignature Language="C#" Value="public void InsertSubtreeBefore (string XML, Microsoft.Office.Core.CustomXMLNode NextSibling = null);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InsertSubtreeBefore([in]string XML, [in]class Microsoft.Office.Core.CustomXMLNode NextSibling) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.InsertSubtreeBefore(System.String,Microsoft.Office.Core.CustomXMLNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InsertSubtreeBefore (XML As String, Optional NextSibling As CustomXMLNode = null)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809368)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XML" Type="System.String" />
+        <Parameter Name="NextSibling" Type="Microsoft.Office.Core.CustomXMLNode" />
+      </Parameters>
+      <Docs>
+        <param name="XML">
+          <span data-ttu-id="179df-148">Representa a subárvore a ser adicionada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-148">Represents the subtree to be added.</span>
+          </span>
+        </param>
+        <param name="NextSibling">
+          <span data-ttu-id="179df-149">Especifica o contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-149">Specifies the context node.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-150">Insere a subárvore especificada no local, antes do nó de contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-150">Inserts the specified subtree into the location just before the context node.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-151">
+            <para>Se o <paramref name="NextSibling" /> parâmetro não é um filho do nó de contexto ou se a operação for resultar em uma estrutura inválida de árvore, a inserção não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-151">
+              <para>If the <paramref name="NextSibling" /> parameter is not a child of the context node or if the operation would result in an invalid tree structure, the insertion is not performed and an error message is displayed. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LastChild">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode LastChild { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode LastChild" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.LastChild" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property LastChild As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ LastChild { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-152">Obtém um <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto correspondente para o último elemento filho do nó atual.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-152">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object corresponding to the last child element of the current node.</span>
+          </span>
+          <span data-ttu-id="179df-153">Se o nó não tem nenhum elemento filho (ou se ele não é do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />), a propriedade retornará <b>Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-153">If the node has no child elements (or if it is not of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />), the property returns <b>Nothing</b>.</span>
+          </span>
+          <span data-ttu-id="179df-154">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-154">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceURI">
+      <MemberSignature Language="C#" Value="public string NamespaceURI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.NamespaceURI" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-155">Obtém o identificador exclusivo do endereço para o namespace do <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-155">Gets  the unique address identifier for the namespace of the <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object.</span>
+          </span>
+          <span data-ttu-id="179df-156">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-156">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-157">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-157">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NextSibling">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode NextSibling { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode NextSibling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.NextSibling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NextSibling As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ NextSibling { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p116">Obtém o próximo nó irmão (elemento, comentário ou instrução de processamento) do nó atual. Se o nó for o último irmão em seu nível, a propriedade retornará <b>Nothing</b>. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p116">Gets the next sibling node (element, comment, or processing instruction) of the current node. If the node is the last sibling at its level, the property returns <b>Nothing</b>. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoCustomXMLNodeType NodeType { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoCustomXMLNodeType NodeType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.NodeType" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NodeType As MsoCustomXMLNodeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoCustomXMLNodeType NodeType { Microsoft::Office::Core::MsoCustomXMLNodeType get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoCustomXMLNodeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p117">Obtém o tipo de nó atual. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p117">Gets the type of the current node. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.MsoCustomXMLNodeType" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NodeValue">
+      <MemberSignature Language="C#" Value="public string NodeValue { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NodeValue" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.NodeValue" />
+      <MemberSignature Language="VB.NET" Value="Public Property NodeValue As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NodeValue { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p118">Obtém ou define o valor do nó atual. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p118">Gets or sets the value of the current node. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-165">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-165">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerDocument">
+      <MemberSignature Language="C#" Value="public object OwnerDocument { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object OwnerDocument" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.OwnerDocument" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerDocument As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ OwnerDocument { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-166">Obtém o objeto representando a pasta de trabalho do Microsoft Office Excel, apresentação do Microsoft Office PowerPoint ou o documento do Microsoft Office Word associado a este nó.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-166">Gets the object representing the Microsoft Office Excel workbook, Microsoft Office PowerPoint presentation, or the Microsoft Office Word document associated with this node.</span>
+          </span>
+          <span data-ttu-id="179df-167">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-167">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-168">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-168">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="OwnerPart">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLPart OwnerPart { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLPart OwnerPart" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.OwnerPart" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property OwnerPart As CustomXMLPart" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPart ^ OwnerPart { Microsoft::Office::Core::CustomXMLPart ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLPart</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p120">Obtém o objeto representando a parte associada com este nó. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p120">Gets the object representing the part associated with this node. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core._CustomXMLPart" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-171">Obtém o objeto pai para o <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-171">Gets the parent object for the <see cref="T:Microsoft.Office.Core.CustomXMLNode" /> object.</span>
+          </span>
+          <span data-ttu-id="179df-172">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-172">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-173">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-173">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ParentNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode ParentNode { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode ParentNode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.ParentNode" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ParentNode As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ ParentNode { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809358)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809358)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p122">Obtém o pai de nó de elemento do nó atual. Se o nó atual estiver no nível raiz, a propriedade retornará <b>Nothing</b>. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p122">Gets the parent element node of the current node. If the current node is at the root level, the property returns <b>Nothing</b>. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="PreviousSibling">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode PreviousSibling { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode PreviousSibling" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.PreviousSibling" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property PreviousSibling As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ PreviousSibling { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p123">Obtém o nó irmão anterior (elemento, comentário ou instrução de processamento) do nó atual. Se o nó atual for o primeiro irmão em seu nível, a propriedade retornará <b>Nothing</b>. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p123">Gets the previous sibling node (element, comment, or processing instruction) of the current node. If the current node is the first sibling at its level, the property returns <b>Nothing</b>. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="RemoveChild">
+      <MemberSignature Language="C#" Value="public void RemoveChild (Microsoft.Office.Core.CustomXMLNode Child);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void RemoveChild([in]class Microsoft.Office.Core.CustomXMLNode Child) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.RemoveChild(Microsoft.Office.Core.CustomXMLNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub RemoveChild (Child As CustomXMLNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void RemoveChild(Microsoft::Office::Core::CustomXMLNode ^ Child);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809369)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Child" Type="Microsoft.Office.Core.CustomXMLNode" />
+      </Parameters>
+      <Docs>
+        <param name="Child">
+          <span data-ttu-id="179df-180">Representa o nó filho do nó de contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-180">Represents the child node of the context node.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-181">Remove da árvore o nó filho especificado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-181">Removes the specified child node from the tree.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-182">
+            <para>Se o nó especificado no <paramref name="Child" /> parâmetro não é um filho do nó de contexto ou se a ação for resultar em inválida de árvore, a remoção não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-182">
+              <para>If the node specified in the <paramref name="Child" /> parameter is not a child of the context node or if the action would result in an invalid tree, the removal is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceChildNode">
+      <MemberSignature Language="C#" Value="public void ReplaceChildNode (Microsoft.Office.Core.CustomXMLNode OldNode, string Name = &quot;&quot;, string NamespaceURI = &quot;&quot;, Microsoft.Office.Core.MsoCustomXMLNodeType NodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, string NodeValue = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReplaceChildNode([in]class Microsoft.Office.Core.CustomXMLNode OldNode, [in]string Name, [in]string NamespaceURI, [in]valuetype Microsoft.Office.Core.MsoCustomXMLNodeType NodeType, [in]string NodeValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.ReplaceChildNode(Microsoft.Office.Core.CustomXMLNode,System.String,System.String,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceChildNode (OldNode As CustomXMLNode, Optional Name As String = &quot;&quot;, Optional NamespaceURI As String = &quot;&quot;, Optional NodeType As MsoCustomXMLNodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, Optional NodeValue As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809370)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="OldNode" Type="Microsoft.Office.Core.CustomXMLNode" />
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="NamespaceURI" Type="System.String" />
+        <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoCustomXMLNodeType" />
+        <Parameter Name="NodeValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="OldNode">
+          <span data-ttu-id="179df-183">Representa o nó filho a ser substituído.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-183">Represents the child node to be replaced.</span>
+          </span>
+        </param>
+        <param name="Name">
+          <span data-ttu-id="179df-184">Representa o nome de base do elemento a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-184">Represents the base name of the element to be added.</span>
+          </span>
+        </param>
+        <param name="NamespaceURI">
+          <span data-ttu-id="179df-185">Representa o namespace do elemento a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-185">Represents the namespace of the element to be added.</span>
+          </span>
+          <span data-ttu-id="179df-186">Este parâmetro é obrigatório se a adição de nós do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> ou <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, caso contrário, ele será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-186">This parameter is required if adding nodes of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> or <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, otherwise it is ignored.</span>
+          </span>
+        </param>
+        <param name="NodeType">
+          <span data-ttu-id="179df-187">Especifica o tipo de nó para adicionar.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-187">Specifies the type of node to add.</span>
+          </span>
+          <span data-ttu-id="179df-188">Se o parâmetro não for especificado, presume-se para ser do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-188">If the parameter is not specified, it is assumed to be of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          </span>
+        </param>
+        <param name="NodeValue">
+          <span data-ttu-id="179df-p126">Utilizado para definir o valor do nó a ser adicionado para os nós que permitem texto. Se o nó não permitir texto, o parâmetro será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p126">Used to set the value of the node to be added for those nodes that allow text. If the node doesn’t allow text, the parameter is ignored.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-191">Remove o nó filho especificado (e sua subárvore) da árvore principal e o substitui por um nó diferente no mesmo local.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-191">Removes the specified child node (and its subtree) from the main tree, and replaces it with a different  node in the same location.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-192">
+            <para>Se o <paramref name="OldNode" /> parâmetro não é um filho do nó de contexto ou se a operação for resultar em uma estrutura inválida de árvore, a substituição não será realizada e será exibida uma mensagem de erro. Além disso, no caso em que o nó a ser adicionado já existe, a substituição não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-192">
+              <para>If the <paramref name="OldNode" /> parameter is not a child of the context node  or if the operation would result in an invalid tree structure, the replacement is not performed and an error message is displayed. In addition, in a case where the node to be added already exists, the replacement is not performed and an error message is displayed. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ReplaceChildSubtree">
+      <MemberSignature Language="C#" Value="public void ReplaceChildSubtree (string XML, Microsoft.Office.Core.CustomXMLNode OldNode);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ReplaceChildSubtree([in]string XML, [in]class Microsoft.Office.Core.CustomXMLNode OldNode) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.ReplaceChildSubtree(System.String,Microsoft.Office.Core.CustomXMLNode)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ReplaceChildSubtree (XML As String, OldNode As CustomXMLNode)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ReplaceChildSubtree(System::String ^ XML, Microsoft::Office::Core::CustomXMLNode ^ OldNode);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809371)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XML" Type="System.String" />
+        <Parameter Name="OldNode" Type="Microsoft.Office.Core.CustomXMLNode" />
+      </Parameters>
+      <Docs>
+        <param name="XML">
+          <span data-ttu-id="179df-193">Representa a subárvore a ser adicionada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-193">Represents the subtree to be added.</span>
+          </span>
+        </param>
+        <param name="OldNode">
+          <span data-ttu-id="179df-194">Representa o nó filho a ser substituído.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-194">Represents the child node to be replaced.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-195">Remove o nó especificado (e sua subárvore) da árvore principal e o substitui por uma subárvore diferente no mesmo local.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-195">Removes the specified node (and its subtree) from the main tree, and replaces it with a different subtree in the same location.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="179df-196">
+            <para>Se a operação for resultar em uma estrutura inválida de árvore, a operação de substituição não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-196">
+              <para>If the operation would result in an invalid tree  structure, the replacement operation is not performed and an error message is displayed. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNodes SelectNodes (string XPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomXMLNodes SelectNodes([in]string XPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.SelectNodes(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectNodes (XPath As String) As CustomXMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::CustomXMLNodes ^ SelectNodes(System::String ^ XPath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809372)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNodes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <span data-ttu-id="179df-197">Contém uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-197">Contains an XPath expression.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-198">Seleciona uma coleção de nós que correspondem a uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-198">Selects a collection of nodes matching an XPath expression.</span>
+          </span>
+          <span data-ttu-id="179df-199">Esse método difere do <see cref="M:Microsoft.Office.Core._CustomXMLPart.SelectNodes(System.String)" /> método em que a expressão XPath seja avaliada começando com o nó 'expressão' como o nó de contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-199">This method differs from the <see cref="M:Microsoft.Office.Core._CustomXMLPart.SelectNodes(System.String)" /> method in that the XPath expression will be evaluated starting with the 'expression' node as the context node.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNodes" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectSingleNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode SelectSingleNode (string XPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomXMLNode SelectSingleNode([in]string XPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.CustomXMLNode.SelectSingleNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectSingleNode (XPath As String) As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::CustomXMLNode ^ SelectSingleNode(System::String ^ XPath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809373)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <span data-ttu-id="179df-200">Contém uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-200">Contains an XPath expression.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="179df-201">Seleciona um único nó de uma coleção de correspondência de uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-201">Selects a single node from a collection matching an XPath expression.</span>
+          </span>
+          <span data-ttu-id="179df-202">Esse método difere do <see cref="M:Microsoft.Office.Core._CustomXMLPart.SelectSingleNode(System.String)" /> método em que a expressão XPath seja avaliada começando com o nó 'expressão' como o nó de contexto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-202">This method differs from the <see cref="M:Microsoft.Office.Core._CustomXMLPart.SelectSingleNode(System.String)" /> method in that the XPath expression will be evaluated starting with the 'expression' node as the context node.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p129">Obtém ou define o texto do nó atual. Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p129">Gets or sets the text for the current node. Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-205">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-205">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XML">
+      <MemberSignature Language="C#" Value="public string XML { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.XML" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809362)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809362)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p130">Obtém a representação XML do nó atual e seus nós filhos, se houver. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p130">Gets the XML representation of the current node and its children, if any exist. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-208">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-208">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XPath">
+      <MemberSignature Language="C#" Value="public string XPath { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XPath" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.CustomXMLNode.XPath" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XPath As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XPath { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="179df-p131">Obtém uma <b>cadeia de caracteres</b> com o XPath canônica para o nó atual. Se o nó não está mais no documento DOM (Object Model), a propriedade retornará uma mensagem de erro. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-p131">Gets a <b>String</b> with the canonicalized XPath for the current node. If the node is no longer in the Document Object Model (DOM), the property returns an error message. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="179df-212">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="179df-212">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

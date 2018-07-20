@@ -1,0 +1,416 @@
+<Type Name="IRibbonUI" FullName="Microsoft.Office.Core.IRibbonUI">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f912fe8c8db15a87c031bae5d14f2fe64d719567" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656752" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRibbonUI" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRibbonUI" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IRibbonUI" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRibbonUI" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRibbonUI" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03A7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="d6032-p101">O objeto retornado pelo procedimento <b>onLoad</b> especificado no rótulo <b>customUI</b>. O objeto contém métodos para invalidar as propriedades de controle e para atualizar a interface do usuário.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d6032-p101">The object that is returned by the <b>onLoad</b> procedure specified on the <b>customUI</b> tag.  The object contains methods for invalidating control properties and for refreshing the user interface.</span>
+      </span>
+    </summary>
+    <remarks>
+      <span data-ttu-id="d6032-103">
+        <para>Você pode personalizar a interface do usuário da faixa de opções (UI) usando os procedimentos de retorno de chamada suplementos COM. Quando o aplicativo host for iniciado, o procedimento de retorno de chamada <b>onLoad</b> é chamado.  O procedimento de retorno de chamada, em seguida, retorna um objeto <b>IRibbonUI</b> apontando para a interface de usuário (UI). Você pode usar esse objeto para invocar os métodos <b>Invalidate</b>, <b>InvalidateControl</b>e <b>Atualizar</b> .</para>
+        <para />
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d6032-103">
+          <para>You can customize the Ribbon user interface (UI) by using callback procedures in COM add-ins. When the host application starts, the <b>onLoad</b> callback procedure is called.  The callback procedure then returns a <b>IRibbonUI</b> object pointing to the user interface (UI). YOu can use that object to invoke the <b>Invalidate</b>, <b>InvalidateControl</b>, and <b>Refresh</b> methods.</para>
+          <para />
+        </span>
+      </span>
+    </remarks>
+    <example>
+      <span data-ttu-id="d6032-104">
+        <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto <b>IRibbonUI</b> que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida todos os controles de cache e atualiza a interface do usuário.</para>
+        <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+        <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+        <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+        <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+      </span>
+      <span class="sxs-lookup">
+        <span data-stu-id="d6032-104">
+          <para>In the following example, starting the host application triggers the <b>onLoad</b> event procedure  that then calls a procedure which creates a <b>IRibbonUI</b> object representing the Ribbon UI.  Next, a callback procedure is defined that invalidates all of the cached controls and then refreshes the UI.</para>
+          <para>The following is the XML markup for Office to load the custom ribbon:</para>
+          <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+          <para>The following is the callback method for the <b>onLoad</b> event:</para>
+          <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+        </span>
+      </span>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateTab">
+      <MemberSignature Language="C#" Value="public void ActivateTab (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTab([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTab(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTab (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTab(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">
+          <span data-ttu-id="d6032-105">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-105">Specifies the identifier of the custom Ribbon tab to be activated.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="d6032-106">Ativa a guia personalizada especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-106">Activates the specified custom tab.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabMso">
+      <MemberSignature Language="C#" Value="public void ActivateTabMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">
+          <span data-ttu-id="d6032-107">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-107">Specifies the identifier of the custom Ribbon tab to be activated.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="d6032-108">Ativa a guia interna especificada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-108">Activates the specified built-in tab.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabQ">
+      <MemberSignature Language="C#" Value="public void ActivateTabQ (string ControlID, string Namespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabQ([in]string ControlID, [in]string Namespace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabQ(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabQ (ControlID As String, Namespace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabQ(System::String ^ ControlID, System::String ^ Namespace);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+        <Parameter Name="Namespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">
+          <span data-ttu-id="d6032-109">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-109">Specifies the identifier of the custom Ribbon tab to be activated.</span>
+          </span>
+        </param>
+        <param name="Namespace">
+          <span data-ttu-id="d6032-110">Especifica o namespace do elemento da guia.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-110">Specifies the namespace of the tab element.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="d6032-111">Ativa a guia personalizada especificada na interface do usuário da Faixa de Opções do Microsoft Office Fluent.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-111">Activates the specified custom tab on the Microsoft Office Fluent Ribbon UI.</span>
+          </span>
+          <span data-ttu-id="d6032-112">Usa o nome totalmente qualificado da guia que inclui o identificador de e o namespace da guia.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-112">Uses the fully qualified name of the tab which includes the identifier and the namespace of the tab.</span>
+          </span>
+        </summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public void Invalidate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invalidate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="d6032-113">Invalida os valores em cache para todos os controles da interface do usuário Ribbon.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-113">Invalidates the cached values for all of the controls of the Ribbon user interface.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="d6032-114">
+            <para>Você pode personalizar a IU da faixa de opções usando os procedimentos de retorno de chamada suplementos COM. Para cada implementa os retornos de chamada o suplemento, as respostas são armazenados em cache.  Por exemplo, se um autor de suplemento implementa o procedimento de retorno de chamada <b>getImage</b> para um botão, a função é chamada uma vez, as cargas de imagem e, em seguida, se a imagem precisa ser atualizada, a imagem em cache é usada no lugar de cancelamento o procedimento. Esse processo continua in-loco até que o suplemento sinalizem os valores armazenados em cache são inválidos, usando o método <b>Invalidate</b> , nesse momento, o procedimento de retorno de chamada é chamado novamente e a resposta de retorno é armazenado em cache.  O suplemento pode então forçar uma atualização imediata da interface do usuário, chamando o método <b>Refresh</b> .</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-114">
+              <para>You can customize the Ribbon UI by using callback procedures in COM add-ins. For each of the callbacks the add-in implements, the responses are  cached.  For example, if an add-in writer implements the <b>getImage</b> callback procedure for a button, the function is  called once, the image loads, and then if the image needs to be updated, the cached image is used instead of recalling the procedure. This process remains in-place until the add-in signals that the cached values are invalid by using the <b>Invalidate</b> method,  at which time, the callback procedure is again called and the return response is cached.  The add-in can then force an immediate update of the UI by calling the <b>Refresh</b> method.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+        <example>
+          <span data-ttu-id="d6032-115">
+            <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida todos os controles da interface do usuário e atualiza a interface do usuário.</para>
+            <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+            <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+            <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+            <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-115">
+              <para>In the following example,  starting the host application triggers the <b>onLoad</b> event  procedure that then calls a procedure which creates an object representing the Ribbon UI.  Next, a callback procedure is defined that invalidates all of the controls on the UI and then refreshes the UI.</para>
+              <para>The following is the XML markup for Office to load the custom ribbon:</para>
+              <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+              <para>The following is the callback method for the <b>onLoad</b> event:</para>
+              <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControl">
+      <MemberSignature Language="C#" Value="public void InvalidateControl (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControl([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControl (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControl(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">
+          <span data-ttu-id="d6032-116">Especifica a identificação do controle que será invalidado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-116">Specifies the ID of the control that will be invalidated.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="d6032-117">Invalida o valor em cache de um controle exclusivo na interface do usuário Ribbon.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-117">Invalidates the cached value for a single control on the Ribbon user interface.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="d6032-118">
+            <para>Você pode personalizar a IU da faixa de opções usando os procedimentos de retorno de chamada suplementos COM. Para cada implementa os retornos de chamada o suplemento, as respostas são armazenados em cache.  Por exemplo, se um autor de suplemento implementa o procedimento de retorno de chamada <b>getImage</b> para um botão, a função é chamada uma vez, as cargas de imagem e, em seguida, se a imagem precisa ser atualizada, a imagem em cache é usada no lugar de cancelamento o procedimento. Esse processo continua in-loco para o controle até que o suplemento sinalizem os valores armazenados em cache são inválidos, usando o método <b>InvalidateControl</b> , nesse momento, o procedimento de retorno de chamada é chamado novamente e a resposta de retorno é armazenado em cache.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-118">
+              <para>You can customize the Ribbon UI by using callback procedures in COM add-ins. For each of the callbacks the add-in implements, the responses are  cached.  For example, if an add-in writer implements the <b>getImage</b> callback procedure for a button, the function is  called once, the image loads, and then if the image needs to be updated, the cached image is used instead of recalling the procedure. This process remains in-place for the control until the add-in signals that the cached values are invalid by using the <b>InvalidateControl</b> method,  at which time, the callback procedure is again called and the return response is cached.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+        <example>
+          <span data-ttu-id="d6032-119">
+            <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida um controle da interface do usuário e atualiza a interface do usuário.</para>
+            <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+            <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+            <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+            <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the cache of a single control 
+    MyRibbon.InvalidateControl(“control5”)            
+End Sub</code>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-119">
+              <para>In the following example,  starting the host application triggers the <b>onLoad</b> event procedure that then calls a procedure which creates an object representing the Ribbon UI.  Next, a callback procedure is defined that invalidates a control on the UI and then refreshes the UI.</para>
+              <para>The following is the XML markup for Office to load the custom ribbon:</para>
+              <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+              <para>The following is the callback method for the <b>onLoad</b> event:</para>
+              <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the cache of a single control 
+    MyRibbon.InvalidateControl(“control5”)            
+End Sub</code>
+            </span>
+          </span>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControlMso">
+      <MemberSignature Language="C#" Value="public void InvalidateControlMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControlMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControlMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControlMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControlMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">
+          <span data-ttu-id="d6032-120">Especificado o identificador do controle que será invalidado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-120">Specified the identifier of the control that will be invalidated.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="d6032-121">Usado para invalidar um controle interno.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-121">Used to invalidate a built-in control.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="d6032-122">
+            <para>A invalidação de um controle redesenha a tela e faz com que qualquer procedimento de retorno de chamada associado a esse controle seja executado.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="d6032-122">
+              <para>Invalidating a control repaints the screen and causes any callback procedures associated with that control to run.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

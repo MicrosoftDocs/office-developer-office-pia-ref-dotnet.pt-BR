@@ -1,0 +1,860 @@
+<Type Name="_CustomXMLPart" FullName="Microsoft.Office.Core._CustomXMLPart">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="39da742c05be0b18a6b3f5cd128987d38d9112f2" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656526" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface _CustomXMLPart : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract _CustomXMLPart implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CustomXMLPart" />
+  <TypeSignature Language="VB.NET" Value="Public Interface _CustomXMLPart&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class _CustomXMLPart : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000CDB05-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>
+      <span data-ttu-id="0783e-101">Representa um único <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> em um <see cref="T:Microsoft.Office.Core._CustomXMLParts" /> conjunto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="0783e-101">Represents a single <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> in a <see cref="T:Microsoft.Office.Core._CustomXMLParts" /> collection.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="AddNode">
+      <MemberSignature Language="C#" Value="public void AddNode (Microsoft.Office.Core.CustomXMLNode Parent, string Name = &quot;&quot;, string NamespaceURI = &quot;&quot;, Microsoft.Office.Core.CustomXMLNode NextSibling = null, Microsoft.Office.Core.MsoCustomXMLNodeType NodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, string NodeValue = &quot;&quot;);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void AddNode([in]class Microsoft.Office.Core.CustomXMLNode Parent, [in]string Name, [in]string NamespaceURI, [in]class Microsoft.Office.Core.CustomXMLNode NextSibling, [in]valuetype Microsoft.Office.Core.MsoCustomXMLNodeType NodeType, [in]string NodeValue) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.AddNode(Microsoft.Office.Core.CustomXMLNode,System.String,System.String,Microsoft.Office.Core.CustomXMLNode,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub AddNode (Parent As CustomXMLNode, Optional Name As String = &quot;&quot;, Optional NamespaceURI As String = &quot;&quot;, Optional NextSibling As CustomXMLNode = null, Optional NodeType As MsoCustomXMLNodeType = Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement, Optional NodeValue As String = &quot;&quot;)" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809352)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Parent" Type="Microsoft.Office.Core.CustomXMLNode" />
+        <Parameter Name="Name" Type="System.String" />
+        <Parameter Name="NamespaceURI" Type="System.String" />
+        <Parameter Name="NextSibling" Type="Microsoft.Office.Core.CustomXMLNode" />
+        <Parameter Name="NodeType" Type="Microsoft.Office.Core.MsoCustomXMLNodeType" />
+        <Parameter Name="NodeValue" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="Parent">
+          <span data-ttu-id="0783e-p101">Representa no nó ao qual esse nó será adicionado. Ao adicionar um atributo, o parâmetro denota o elemento ao qual o atributo deve ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-p101">Represents the node under which this node should be added. If adding an attribute, the parameter denotes the element that the attribute should be added to.</span>
+          </span>
+        </param>
+        <param name="Name">
+          <span data-ttu-id="0783e-104">Representa o nome de base do nó a ser adicionado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-104">Represents the base name of the node to be added.</span>
+          </span>
+        </param>
+        <param name="NamespaceURI">
+          <span data-ttu-id="0783e-105">Representa o namespace do elemento a ser anexado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-105">Represents the namespace of the element to be appended.</span>
+          </span>
+          <span data-ttu-id="0783e-106">Este parâmetro é necessário para acrescentar nós do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> ou <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, caso contrário, ele será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-106">This parameter is required to append nodes of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" /> or <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />, otherwise it is ignored.</span>
+          </span>
+        </param>
+        <param name="NextSibling">
+          <span data-ttu-id="0783e-107">Representa o nó ao qual deve se tornar o próximo nó irmão do novo nó.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-107">Represents the node which should become the next sibling of the new node.</span>
+          </span>
+          <span data-ttu-id="0783e-108">Se não especificado, o nó é adicionado ao final do filhos do nó pai.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-108">If not specified, the node is added to the end of the parent node’s children.</span>
+          </span>
+          <span data-ttu-id="0783e-109">Esse parâmetro será ignorado para inclusões de tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-109">This parameter is ignored for additions of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeAttribute" />.</span>
+          </span>
+          <span data-ttu-id="0783e-110">Se o nó não é um filho do pai, um erro será exibido.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-110">If the node is not a child of the parent, an error is displayed.</span>
+          </span>
+        </param>
+        <param name="NodeType">
+          <span data-ttu-id="0783e-111">Especifica o tipo de nó a ser anexado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-111">Specifies the type of node to append.</span>
+          </span>
+          <span data-ttu-id="0783e-112">Se o parâmetro não for especificado, presume-se para ser do tipo <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-112">If the parameter is not specified, it is assumed to be of type <see cref="F:Microsoft.Office.Core.MsoCustomXMLNodeType.msoCustomXMLNodeElement" />.</span>
+          </span>
+        </param>
+        <param name="NodeValue">
+          <span data-ttu-id="0783e-p105">Utilizado para definir o valor do nó anexado para os nós que permitem texto. Se o nó não permitir texto, o parâmetro será ignorado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-p105">Used to set the value of the appended node for those nodes that allow text. If the node doesn’t allow text, the parameter is ignored.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0783e-115">Adiciona um nó a uma árvore XML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-115">Adds a node to the XML tree.</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="0783e-116">
+            <para>Se o <see cref="M:Microsoft.Office.Core._CustomXMLPart.AddNode(Microsoft.Office.Core.CustomXMLNode,System.String,System.String,Microsoft.Office.Core.CustomXMLNode,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String)" /> operação for resultar em uma estrutura inválida de árvore, a ação de anexar não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-116">
+              <para>If the <see cref="M:Microsoft.Office.Core._CustomXMLPart.AddNode(Microsoft.Office.Core.CustomXMLNode,System.String,System.String,Microsoft.Office.Core.CustomXMLNode,Microsoft.Office.Core.MsoCustomXMLNodeType,System.String)" />  operation would result in an invalid tree structure, the append is not performed and an error message is displayed.</para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-117">Obtém um objeto <b>Application</b> que representa o aplicativo de contêiner para o <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-117">Gets an <b>Application</b> object that represents the container application for the <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-118">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-118">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-119">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-119">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BuiltIn">
+      <MemberSignature Language="C#" Value="public bool BuiltIn { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool BuiltIn" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.BuiltIn" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property BuiltIn As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool BuiltIn { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-120">Obtém um valor que indica se o <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> é interna.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-120">Gets a value that indicates whether the <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> is built-in.</span>
+          </span>
+          <span data-ttu-id="0783e-121">Somente leitura</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-121">Read-only</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-122">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-122">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-123">Obtém um inteiro de 32 bits que indica o aplicativo no qual o <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto foi criado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-123">Gets a 32-bit integer that indicates the application in which the <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object was created.</span>
+          </span>
+          <span data-ttu-id="0783e-124">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-124">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-125">
+            <b>Integer</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-125">
+              <b>Integer</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Delete">
+      <MemberSignature Language="C#" Value="public void Delete ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Delete() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.Delete" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Delete ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Delete();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-126">Exclui as atuais <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> do repositório de dados (interface<b>IXMLDataStore</b> ).</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-126">Deletes the current <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> from the data store (<b>IXMLDataStore</b> interface).</span>
+          </span>
+        </summary>
+        <remarks>
+          <span data-ttu-id="0783e-127">
+            <para>Se você tentar excluir a parte contendo as principais propriedades, a operação não será realizada e será exibida uma mensagem de erro.</para>
+            <para />
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-127">
+              <para>If you attempt to delete the part containing the core properties, the operation is not performed and an error message is displayed. </para>
+              <para />
+            </span>
+          </span>
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="DocumentElement">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode DocumentElement { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLNode DocumentElement" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.DocumentElement" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property DocumentElement As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLNode ^ DocumentElement { Microsoft::Office::Core::CustomXMLNode ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-p109">Obtém o elemento raiz de uma região acoplada dos dados em um documento. Se a região estiver vazia, a propriedade retornará <b>Nothing</b>. Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-p109">Gets the root element of a bound region of data in a document. If the region is empty, the property returns <b>Nothing</b>. Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNode" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Errors">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLValidationErrors Errors { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLValidationErrors Errors" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.Errors" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Errors As CustomXMLValidationErrors" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLValidationErrors ^ Errors { Microsoft::Office::Core::CustomXMLValidationErrors ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809358)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809358)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLValidationErrors</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-131">Obtém um <see cref="T:Microsoft.Office.Core.CustomXMLValidationErrors" /> objeto que fornece acesso aos erros de validação XML, se alguma existir.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-131">Gets a <see cref="T:Microsoft.Office.Core.CustomXMLValidationErrors" /> object that provides access to any XML validation errors, if any exists.</span>
+          </span>
+          <span data-ttu-id="0783e-132">Se não há erros de validação existirem, essa propriedade retornará <b>Nothing</b>.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-132">If no validation errors exist, this property returns <b>Nothing</b>.</span>
+          </span>
+          <span data-ttu-id="0783e-133">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-133">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLValidationErrors" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Id">
+      <MemberSignature Language="C#" Value="public string Id { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Id" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.Id" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Id As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Id { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-134">Obtém uma <b>cadeia de caracteres</b> que contém o GUID atribuído à data atual <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-134">Gets a <b>String</b> containing the GUID assigned to the current   <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-135">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-135">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-136">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-136">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Load">
+      <MemberSignature Language="C#" Value="public bool Load (string FilePath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool Load([in]string FilePath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.Load(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Load (FilePath As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool Load(System::String ^ FilePath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809354)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FilePath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="FilePath">
+          <span data-ttu-id="0783e-137">Aponta para o arquivo no computador do usuário ou em uma rede contendo o XML a ser carregado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-137">Points to the file on the user’s computer or on a network containing the XML to be loaded.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0783e-138">Permite que o autor do modelo preencher um <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> de um arquivo existente.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-138">Allows the template author to populate a <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> from an existing file.</span>
+          </span>
+          <span data-ttu-id="0783e-139">Retorna <b>True</b> se a carga foi bem-sucedida.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-139">Returns <b>True</b> if the load was successful.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="0783e-140">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-140">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="LoadXML">
+      <MemberSignature Language="C#" Value="public bool LoadXML (string XML);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance bool LoadXML([in]string XML) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.LoadXML(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function LoadXML (XML As String) As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; bool LoadXML(System::String ^ XML);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XML" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XML">
+          <span data-ttu-id="0783e-141">Contém o XML a ser carregado.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-141">Contains the XML to load.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0783e-142">Permite que o autor do modelo preencher um <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto a partir de uma sequência de caracteres XML.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-142">Allows the template author to populate a <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object from an XML string.</span>
+          </span>
+          <span data-ttu-id="0783e-143">Retorna <b>True</b> se a carga foi bem-sucedida.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-143">Returns <b>True</b> if the load was successful.</span>
+          </span>
+        </summary>
+        <returns>
+          <span data-ttu-id="0783e-144">
+            <b>Boolean</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-144">
+              <b>Boolean</b>
+            </span>
+          </span>
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceManager">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLPrefixMappings NamespaceManager { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLPrefixMappings NamespaceManager" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.NamespaceManager" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceManager As CustomXMLPrefixMappings" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLPrefixMappings ^ NamespaceManager { Microsoft::Office::Core::CustomXMLPrefixMappings ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809350)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLPrefixMappings</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-145">Obtém o conjunto de namespace mapeamentos de prefixo usados contra as atuais <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-145">Gets the set of namespace prefix mappings used against the current <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-146">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-146">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLPrefixMappings" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="NamespaceURI">
+      <MemberSignature Language="C#" Value="public string NamespaceURI { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string NamespaceURI" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.NamespaceURI" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property NamespaceURI As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ NamespaceURI { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-147">Obtém o identificador exclusivo do endereço para o namespace do <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-147">Gets the unique address identifier for the namespace of the <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-148">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-148">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-149">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-149">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-150">Obtém o objeto pai para o <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-150">Gets the parent object for the <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-151">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-151">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-152">
+            <b>Object</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-152">
+              <b>Object</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SchemaCollection">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLSchemaCollection SchemaCollection { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.CustomXMLSchemaCollection SchemaCollection" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.SchemaCollection" />
+      <MemberSignature Language="VB.NET" Value="Public Property SchemaCollection As CustomXMLSchemaCollection" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::CustomXMLSchemaCollection ^ SchemaCollection { Microsoft::Office::Core::CustomXMLSchemaCollection ^ get(); void set(Microsoft::Office::Core::CustomXMLSchemaCollection ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809348)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLSchemaCollection</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-153">Obtém ou define um <see cref="T:Microsoft.Office.Core.CustomXMLSchemaCollection" /> objeto que representa o conjunto de esquemas anexado a uma região acoplada dos dados em um documento.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-153">Gets or sets a <see cref="T:Microsoft.Office.Core.CustomXMLSchemaCollection" /> object  representing the set of schemas attached to a bound region of data in a document.</span>
+          </span>
+          <span data-ttu-id="0783e-154">Leitura/gravação.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-154">Read/write.</span>
+          </span>
+        </summary>
+        <value>
+          <see cref="T:Microsoft.Office.Core.CustomXMLSchemaCollection" />
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectNodes">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNodes SelectNodes (string XPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomXMLNodes SelectNodes([in]string XPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.SelectNodes(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectNodes (XPath As String) As CustomXMLNodes" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::CustomXMLNodes ^ SelectNodes(System::String ^ XPath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809356)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNodes</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <span data-ttu-id="0783e-155">Contém a expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-155">Contains the XPath expression.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0783e-156">Seleciona uma coleção de nós de uma parte XML personalizada.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-156">Selects a collection of nodes from a custom XML part.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNodes" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SelectSingleNode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.CustomXMLNode SelectSingleNode (string XPath);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.CustomXMLNode SelectSingleNode([in]string XPath) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core._CustomXMLPart.SelectSingleNode(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Function SelectSingleNode (XPath As String) As CustomXMLNode" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::CustomXMLNode ^ SelectSingleNode(System::String ^ XPath);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.CustomXMLNode</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="XPath" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="XPath">
+          <span data-ttu-id="0783e-157">Contém uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-157">Contains an XPath expression.</span>
+          </span>
+        </param>
+        <summary>
+          <span data-ttu-id="0783e-158">Seleciona um único nó em uma parte XML personalizada correspondente a uma expressão XPath.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-158">Selects a single node within a custom XML part matching an XPath expression.</span>
+          </span>
+        </summary>
+        <returns>
+          <see cref="T:Microsoft.Office.Core.CustomXMLNodes" />
+        </returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="XML">
+      <MemberSignature Language="C#" Value="public string XML { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string XML" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core._CustomXMLPart.XML" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property XML As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ XML { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>
+          <span data-ttu-id="0783e-159">Obtém a representação XML do atual <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> objeto.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-159">Gets the XML representation of the current <see cref="T:Microsoft.Office.Core._CustomXMLPart" /> object.</span>
+          </span>
+          <span data-ttu-id="0783e-160">Somente leitura.</span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-160">Read-only.</span>
+          </span>
+        </summary>
+        <value>
+          <span data-ttu-id="0783e-161">
+            <b>String</b>
+          </span>
+          <span class="sxs-lookup">
+            <span data-stu-id="0783e-161">
+              <b>String</b>
+            </span>
+          </span>
+        </value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

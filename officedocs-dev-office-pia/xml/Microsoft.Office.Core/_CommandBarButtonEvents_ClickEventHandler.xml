@@ -1,0 +1,72 @@
+<Type Name="_CommandBarButtonEvents_ClickEventHandler" FullName="Microsoft.Office.Core._CommandBarButtonEvents_ClickEventHandler">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="961501ea02409e9d3b18ababb20d6a625b4cfa10" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20657283" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public delegate void _CommandBarButtonEvents_ClickEventHandler(CommandBarButton Ctrl, out bool CancelDefault);" />
+  <TypeSignature Language="ILAsm" Value=".class public auto ansi sealed _CommandBarButtonEvents_ClickEventHandler extends System.MulticastDelegate" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core._CommandBarButtonEvents_ClickEventHandler" />
+  <TypeSignature Language="VB.NET" Value="Public Delegate Sub _CommandBarButtonEvents_ClickEventHandler(Ctrl As CommandBarButton, ByRef CancelDefault As Boolean)" />
+  <TypeSignature Language="C++ CLI" Value="public delegate void _CommandBarButtonEvents_ClickEventHandler(CommandBarButton ^ Ctrl, [Runtime::InteropServices::Out] bool % CancelDefault);" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Base>
+    <BaseTypeName>System.Delegate</BaseTypeName>
+  </Base>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.ComVisible(false)</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(16)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Parameters>
+    <Parameter Name="Ctrl" Type="Microsoft.Office.Core.CommandBarButton" />
+    <Parameter Name="CancelDefault" Type="System.Boolean&amp;" RefType="out" />
+  </Parameters>
+  <ReturnValue>
+    <ReturnType>System.Void</ReturnType>
+  </ReturnValue>
+  <Docs>
+    <param name="Ctrl">
+      <span data-ttu-id="509b8-101">Necessário <b>CommandBarButton</b>.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-101">Required <b>CommandBarButton</b>.</span>
+      </span>
+      <span data-ttu-id="509b8-102">Indica o controle <b>CommandBarButton</b> que iniciou o evento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-102">Denotes the <b>CommandBarButton</b> control that initiated the event.</span>
+      </span>
+    </param>
+    <param name="CancelDefault">
+      <span data-ttu-id="509b8-103">Necessário <b>booleano</b>.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-103">Required <b>Boolean</b>.</span>
+      </span>
+      <span data-ttu-id="509b8-104">
+        <b>False</b> se ocorrer o comportamento padrão associado ao controle <b>CommandBarButton</b> , a menos que tenha sido cancelado por outro processo ou suplemento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-104">
+          <b>False</b> if the default behavior associated with the <b>CommandBarButton</b> control occurs, unless it’s canceled by another process or add-in.</span>
+      </span>
+    </param>
+    <summary>
+      <span data-ttu-id="509b8-105">Um tipo de <b>delegado</b> usado para adicionar um manipulador de eventos para o <see cref="E:Microsoft.Office.Core._CommandBarButtonEvents_Event.Click" /> evento.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-105">A <b>Delegate</b> type used to add an event handler for the <see cref="E:Microsoft.Office.Core._CommandBarButtonEvents_Event.Click" /> event.</span>
+      </span>
+      <span data-ttu-id="509b8-106">O evento <b>Click</b> ocorre quando o usuário clica em um <see cref="T:Microsoft.Office.Core.CommandBarButton" /> objeto.</span>
+      <span class="sxs-lookup">
+        <span data-stu-id="509b8-106">The <b>Click</b> event occurs when the user clicks a <see cref="T:Microsoft.Office.Core.CommandBarButton" /> object.</span>
+      </span>
+    </summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+</Type>
