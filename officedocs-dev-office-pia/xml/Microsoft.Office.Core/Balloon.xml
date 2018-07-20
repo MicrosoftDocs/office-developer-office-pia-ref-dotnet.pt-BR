@@ -1,0 +1,862 @@
+<Type Name="Balloon" FullName="Microsoft.Office.Core.Balloon">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="b978291d98fbee8f572e76ae54e7063dd52fe070" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656923" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface Balloon : Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract Balloon implements class Microsoft.Office.Core._IMsoDispObj" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.Balloon" />
+  <TypeSignature Language="VB.NET" Value="Public Interface Balloon&#xA;Implements _IMsoDispObj" />
+  <TypeSignature Language="C++ CLI" Value="public interface class Balloon : Microsoft::Office::Core::_IMsoDispObj" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C0324-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4304)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Representa o balão onde o Assistente do Office exibe informações.</summary>
+    <remarks>
+      <para>Um balão pode conter controles como caixas de seleção e rótulos.</para> Uso de 
+      <para>o <see cref="P:Microsoft.Office.Core.Assistant.NewBalloon" /> propriedade para retornar um objeto <b>Balloon</b> . Não existe uma coleção para o objeto de <b>balão</b> ; somente um balão pode estar visível ao mesmo tempo. No entanto, é possível definir vários balões e exibir qualquer um deles quando necessário.</para> Uso de 
+      <para>o <see cref="M:Microsoft.Office.Core.Balloon.Show" /> método para tornar o balão especificado visível. Use o <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> propriedade para executar procedimentos com base nas seleções de balões sem janela restrita (os balões permanecem visíveis enquanto um usuário trabalha no aplicativo). Use o <see cref="M:Microsoft.Office.Core.Balloon.Close" /> método para fechar balões sem janela restrita.</para><para>Você pode reutilizar objetos de balão que você já tenha criado atribuindo o objeto a uma variável e exibindo a variável quando você precisa dela.</para><para>Como alternativa, em vez de usar variáveis separadas, você pode colocar o objeto balloon em uma matriz.</para><para /></remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Animation">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoAnimationType Animation { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoAnimationType Animation" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Animation" />
+      <MemberSignature Language="VB.NET" Value="Public Property Animation As MsoAnimationType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoAnimationType Animation { Microsoft::Office::Core::MsoAnimationType get(); void set(Microsoft::Office::Core::MsoAnimationType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809357)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoAnimationType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define uma ação de animação para o Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>o assistente só é animado enquanto o balão é exibido. "Clipe" é o assistente padrão, e <b>msoAnimationIdle</b> é o tipo de animação padrão para o assistente.</para>
+          <para>Dependendo do assistente selecionado, a configuração da propriedade de <b>animação</b> pode ou não pode resultar em uma animação óbvia. No entanto, todos os <see cref="T:Microsoft.Office.Core.MsoAnimationType" /> constantes são válidas para todos os assistentes. Observe que constantes diferentes podem produzir a mesma animação.</para>
+          <para>As seguintes constantes <b>MsoAnimationType</b> representam animações que repetem a ação especificada, até que o assistente ser descartado ou a propriedade de <b>animação</b> é redefinida com alguma outra animação:</para>
+          <para>
+            <b>msoAnimationCheckingSomething</b>
+          </para>
+          <para>
+            <b>msoAnimationGetTechy</b>
+          </para>
+          <para>
+            <b>msoAnimationListensToComputer</b>
+          </para>
+          <para>
+            <b>msoAnimationSearching</b>
+          </para>
+          <para>
+            <b>msoAnimationThinking</b>
+          </para>
+          <para>
+            <b>msoAnimationWorkingAtSomething</b>
+          </para>
+          <para>
+            <b>msoAnimationWritingNotingSomething</b>
+          </para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto <b>Application</b> que representa o aplicativo de contêiner para o objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="BalloonType">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBalloonType BalloonType { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoBalloonType BalloonType" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.BalloonType" />
+      <MemberSignature Language="VB.NET" Value="Public Property BalloonType As MsoBalloonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoBalloonType BalloonType { Microsoft::Office::Core::MsoBalloonType get(); void set(Microsoft::Office::Core::MsoBalloonType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809347)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBalloonType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de balão que usa o Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>Quando você cria um <see cref="T:Microsoft.Office.Core.Balloon" /> de objeto, essa propriedade é definida inicialmente como <b>msoBalloonTypeButtons</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Button">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoButtonSetType Button { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoButtonSetType Button" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Button" />
+      <MemberSignature Language="VB.NET" Value="Public Property Button As MsoButtonSetType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoButtonSetType Button { Microsoft::Office::Core::MsoButtonSetType get(); void set(Microsoft::Office::Core::MsoButtonSetType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809359)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoButtonSetType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de botão exibido na parte inferior do balão Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>Quando você cria um <see cref="T:Microsoft.Office.Core.Balloon" /> de objeto, essa propriedade é definida inicialmente como <b>msoButtonSetOK</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Callback">
+      <MemberSignature Language="C#" Value="public string Callback { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Callback" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Callback" />
+      <MemberSignature Language="VB.NET" Value="Public Property Callback As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Callback { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809361)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o nome do procedimento para executar a partir de um balão sem janela restrita.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>O procedimento que você especificar para a propriedade de <b>retorno de chamada</b> deve ser escrito para receber dois ou três argumentos, dependendo do que você usar a propriedade com. Se você usar a propriedade de <b>retorno de chamada</b> com um assistente, você deve gravar o procedimento para receber dois argumentos: um inteiro longo que representa o <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> valor de botão que o usuário clicou e um inteiro longo que identifica unicamente o balão. Se você usar a propriedade de <b>retorno de chamada</b> com um balão sem janela restrita, você deve escrever o procedimento para receber três argumentos: o objeto Balloon que chamou o procedimento; um inteiro longo que representa o valor <b>msoBalloonButtonType</b> do botão o usuário clicou; e um inteiro longo que identifica exclusivamente o balão que chamou o procedimento, conforme indicado no balão de <see cref="P:Microsoft.Office.Core.Balloon.Private" /> propriedade.</para>
+          <para>o procedimento de retorno de chamada deve conter pelo menos uma condição sob a qual o <see cref="M:Microsoft.Office.Core.Balloon.Close" /> método é aplicado ao <see cref="T:Microsoft.Office.Core.Balloon" /> objeto que é passado para ele; caso contrário, o balão sem janela restrita não pode ser descartado.</para>
+          <para>Se você especificar um procedimento armazenado em um módulo de classe separada, você deve incluir o nome do módulo no valor atribuído à propriedade de <b>retorno de chamada</b> (por exemplo, "Sheet1.MyCallback).</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Checkboxes">
+      <MemberSignature Language="C#" Value="public object Checkboxes { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Checkboxes" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Checkboxes" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Checkboxes As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Checkboxes { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809345)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o <see cref="T:Microsoft.Office.Core.BalloonCheckboxes" /> coleção que representa todas as caixas de seleção contidas no balão especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Close">
+      <MemberSignature Language="C#" Value="public void Close ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Close() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.Close" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Close ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Close();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809368)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Fecha o balão sem janela restrita ativo.</summary>
+        <remarks>
+          <para>Você deve usar esse método apenas nos procedimentos de retorno de chamada.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Como um exemplo de como funciona a essa propriedade, ela retornará de 1297307460, que representa a cadeia de caracteres "MSWD", se o objeto foi criado no Microsoft Word; Essa propriedade retornará 1480803660, se o objeto foi criado no Microsoft Excel. Esse valor também pode ser representado pela constante <b>wdCreatorCode</b> no Word ou <b>xlCreatorCode</b> no Excel.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador "MSWD". Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para> O <b>criador</b> do 
+          <para>propriedade sempre retorna o identificador numérico para o aplicativo ativo, assim como o <see cref="P:Microsoft.Office.Core.Balloon.Application" /> propriedade sempre retorna o nome do aplicativo ativo na forma de sequência. Use a propriedade <b>CreatedBy</b> do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, e <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objetos para retornar o nome da pessoa que criou esses objetos. Use as propriedades de documento para retornar informações sobre os autores de documentos do Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Heading">
+      <MemberSignature Language="C#" Value="public string Heading { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Heading" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Heading" />
+      <MemberSignature Language="VB.NET" Value="Public Property Heading As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Heading { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809351)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o título que aparece no balão Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>, Você pode especificar um gráfico a ser exibido no título do balão usando a seguinte sintaxe: {<paramref name="type location sizing_factor" />}, onde <paramref name="type" /> é bmp (bitmap) ou wmf (metarquivo do Windows), <paramref name="location" /> é o recurso ID ou o caminho e nome de arquivo, e <paramref name="sizing_factor" /> Especifica a largura do WMF (omitido para bmp).</para>
+          <para>o título do balão também suporta texto sublinhado e texto que tenha uma das 16 paleta cores do sistema aplicadas a ele. Para exibir o texto sublinhado em um cabeçalho, use a sintaxe {<paramref name="ul" />} ou {<paramref name="ul 1" />}; Use {<paramref name="ul 0" />} para desativar o sublinhado. Para alterar a cor do texto do cabeçalho, preceda a cadeia de caracteres de texto com a sequência de caracteres {<paramref name="cf number" />}, onde número é um dos números das cores do sistema listados na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>0</b>
+              </description>
+              <description>preto</description>
+            </item>
+            <item>
+              <description>
+                <b>1</b>
+              </description>
+              <description>vermelho escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>2</b>
+              </description>
+              <description>verde escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>3</b>
+              </description>
+              <description>amarelo escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>4</b>
+              </description>
+              <description>azul escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>5 </b>
+              </description>
+              <description>Magenta escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>6</b>
+              </description>
+              <description>ciano escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>7</b>
+              </description>
+              <description>cinza claro</description>
+            </item>
+            <item>
+              <description>
+                <b>248</b>
+              </description>
+              <description>cinza médio</description>
+            </item>
+            <item>
+              <description>
+                <b>249</b>
+              </description>
+              <description>vermelho</description>
+            </item>
+            <item>
+              <description>
+                <b>250</b>
+              </description>
+              <description>Verde</description>
+            </item>
+            <item>
+              <description>
+                <b>251</b>
+              </description>
+              <description>amarelo</description>
+            </item>
+            <item>
+              <description>Azul</description>
+              <description>
+                <b>252</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>253</b>
+              </description>
+              <description>magenta</description>
+            </item>
+            <item>
+              <description>
+                <b>254</b>
+              </description>
+              <description>ciano</description>
+            </item>
+            <item>
+              <description>
+                <b>255</b>
+              </description>
+              <description>White</description>
+            </item>
+          </list>
+          <para>Se você especificar um número diferente dos números das cores do sistema, o texto do título será preto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Icon">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoIconType Icon { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoIconType Icon" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Icon" />
+      <MemberSignature Language="VB.NET" Value="Public Property Icon As MsoIconType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoIconType Icon { Microsoft::Office::Core::MsoIconType get(); void set(Microsoft::Office::Core::MsoIconType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809349)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoIconType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o tipo de ícone que aparece na parte superior esquerda do balão do Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Labels">
+      <MemberSignature Language="C#" Value="public object Labels { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Labels" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Labels" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Labels As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Labels { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809346)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Core.BalloonLabels" /> coleção que representa os rótulos de botão, os rótulos de número e os rótulos de marcador contidos no balão do Assistente do Office especificado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Mode">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoModeType Mode { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance valuetype Microsoft.Office.Core.MsoModeType Mode" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Mode" />
+      <MemberSignature Language="VB.NET" Value="Public Property Mode As MsoModeType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::MsoModeType Mode { Microsoft::Office::Core::MsoModeType get(); void set(Microsoft::Office::Core::MsoModeType value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809355)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoModeType</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o comportamento modal do balão Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>Quando você cria um <see cref="T:Microsoft.Office.Core.Balloon" /> de objeto, essa propriedade é definida inicialmente como <b>msoModeModal</b>.</para>
+          <para>Se a propriedade <b>Mode</b> de um balão estiver definida como <b>msoModeModeless</b>, o usuário pode trabalhar no aplicativo enquanto o balão está visível. Se a propriedade estiver definida como <b>msoModeModal</b>, o usuário deve descartar o balão antes de continuar a trabalhar no aplicativo. Se a propriedade é definida como <b>msoModeAutoDown</b>, o balão é descartado quando o usuário clica em qualquer lugar na tela.</para>
+          <para>Se a propriedade <b>Mode</b> de um balão estiver definida como <b>msoModeModeless</b> e um valor para o <see cref="P:Microsoft.Office.Core.Balloon.Callback" /> propriedade não for fornecida, ocorrerá um erro. O <see cref="M:Microsoft.Office.Core.Balloon.Close" /> método só pode ser usado no procedimento especificado pela propriedade <b>retorno de chamada</b> quando a propriedade <b>Mode</b> estiver definida como <b>msoModeModeless</b>.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Name">
+      <MemberSignature Language="C#" Value="public string Name { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Name" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Name" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Name As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Name { System::String ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809366)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o nome do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809344)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto pai para o objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Private">
+      <MemberSignature Language="C#" Value="public int Private { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Private" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Private" />
+      <MemberSignature Language="VB.NET" Value="Public Property Private As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Private { int get(); void set(int value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809363)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define um inteiro que identifica o balão do Assistente do Office que iniciou o procedimento de retorno de chamada.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>Essa propriedade é útil se você executar o mesmo procedimento de retorno de chamada de mais de um balão.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="SetAvoidRectangle">
+      <MemberSignature Language="C#" Value="public void SetAvoidRectangle (int Left, int Top, int Right, int Bottom);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void SetAvoidRectangle([in]int32 Left, [in]int32 Top, [in]int32 Right, [in]int32 Bottom) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.SetAvoidRectangle(System.Int32,System.Int32,System.Int32,System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub SetAvoidRectangle (Left As Integer, Top As Integer, Right As Integer, Bottom As Integer)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void SetAvoidRectangle(int Left, int Top, int Right, int Bottom);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809365)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Left" Type="System.Int32" />
+        <Parameter Name="Top" Type="System.Int32" />
+        <Parameter Name="Right" Type="System.Int32" />
+        <Parameter Name="Bottom" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Left">
+          <b>Integer</b>necessário. As coordenadas (em pontos e relativa à tela) da área da tela que o balão do Assistente do Office evitará quando ele é exibido.</param>
+        <param name="Top">
+          <b>Integer</b>necessário. As coordenadas (em pontos e relativa à tela) da área da tela que o balão do Assistente do Office evitará quando ele é exibido.</param>
+        <param name="Right">
+          <b>Integer</b>necessário. As coordenadas (em pontos e relativa à tela) da área da tela que o balão do Assistente do Office evitará quando ele é exibido.</param>
+        <param name="Bottom">
+          <b>Integer</b>necessário. As coordenadas (em pontos e relativa à tela) da área da tela que o balão do Assistente do Office evitará quando ele é exibido.</param>
+        <summary>Impede que o balão do Assistente do Office que está sendo exibida em uma área especificada da tela.</summary>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>Essa propriedade retorna uma <see cref="T:Microsoft.Office.Core.Assistant" /> objeto.</para>
+          <para>Essa propriedade se destina a evitar que o Assistente do Office balão de assistentes e caixas de diálogo personalizadas sobrepostas.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Show">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.MsoBalloonButtonType Show ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance valuetype Microsoft.Office.Core.MsoBalloonButtonType Show() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.Balloon.Show" />
+      <MemberSignature Language="VB.NET" Value="Public Function Show () As MsoBalloonButtonType" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; Microsoft::Office::Core::MsoBalloonButtonType Show();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809367)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.MsoBalloonButtonType</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Exibe o objeto balão especificado e retorna um <see cref="T:Microsoft.Office.Core.MsoBalloonButtonType" /> constante.</summary>
+        <returns>To be added.</returns>
+        <remarks>
+          <para>a constante retornada indica qual botão ou rótulo o usuário clicou no balão.</para>
+          <para>Essa propriedade retorna uma expressão que retorna um <see cref="T:Microsoft.Office.Core.Balloon" /> objeto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Text">
+      <MemberSignature Language="C#" Value="public string Text { get; set; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance string Text" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.Balloon.Text" />
+      <MemberSignature Language="VB.NET" Value="Public Property Text As String" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::String ^ Text { System::String ^ get(); void set(System::String ^ value); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>set: System.Runtime.InteropServices.DispId(1610809353)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.String</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna ou define o texto exibido após o título, mas antes do rótulos ou caixas de seleção no balão do Assistente do Office.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Parte do conteúdo deste tópico pode não ser aplicável a alguns idiomas.</para>
+          <para>, Você pode especificar que um determinado gráfico seja exibido usando a seguinte sintaxe: {<paramref name="type location sizing_factor" />}, onde <paramref name="type" /> é bmp (bitmap) ou wmf (metarquivo do Windows); <paramref name="location" /> é o recurso ID ou o caminho e nome de arquivo; e <paramref name="sizing_factor" /> indica a largura do arquivo. wmf (<paramref name="sizing_factor" /> é omitido para arquivos. bmp).</para>
+          <para>o <see cref="T:Microsoft.Office.Core.Balloon" /> objeto também suporta texto sublinhado e texto que tenha uma das 16 paleta cores do sistema aplicadas a ele. Para exibir o texto sublinhado, use a sintaxe {<paramref name="ul" />} ou {<paramref name="ul 1" />}; Use {<paramref name="ul 0" />} para desativar o sublinhado. Para alterar a cor do texto, preceda a cadeia de caracteres de texto com a sequência de caracteres {<paramref name="cf number" />}, onde número é um dos números das cores do sistema listados na tabela a seguir.</para>
+          <list type="table">
+            <item>
+              <description>
+                <b>0</b>
+              </description>
+              <description>preto</description>
+            </item>
+            <item>
+              <description>
+                <b>1</b>
+              </description>
+              <description>vermelho escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>2</b>
+              </description>
+              <description>verde escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>3</b>
+              </description>
+              <description>amarelo escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>4</b>
+              </description>
+              <description>azul escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>5 </b>
+              </description>
+              <description>Magenta escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>6</b>
+              </description>
+              <description>ciano escuro</description>
+            </item>
+            <item>
+              <description>
+                <b>7</b>
+              </description>
+              <description>cinza claro</description>
+            </item>
+            <item>
+              <description>
+                <b>248</b>
+              </description>
+              <description>cinza médio</description>
+            </item>
+            <item>
+              <description>
+                <b>249</b>
+              </description>
+              <description>vermelho</description>
+            </item>
+            <item>
+              <description>
+                <b>250</b>
+              </description>
+              <description>Verde</description>
+            </item>
+            <item>
+              <description>
+                <b>251</b>
+              </description>
+              <description>amarelo</description>
+            </item>
+            <item>
+              <description>Azul</description>
+              <description>
+                <b>252</b>
+              </description>
+            </item>
+            <item>
+              <description>
+                <b>253</b>
+              </description>
+              <description>magenta</description>
+            </item>
+            <item>
+              <description>
+                <b>254</b>
+              </description>
+              <description>ciano</description>
+            </item>
+            <item>
+              <description>
+                <b>255</b>
+              </description>
+              <description>White</description>
+            </item>
+          </list>
+          <para>Se você especificar um número diferente dos números das cores do sistema, o texto no balão Assistente do Office é preto.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

@@ -1,0 +1,287 @@
+<Type Name="SharedWorkspaceFolders" FullName="Microsoft.Office.Core.SharedWorkspaceFolders">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="483be4792e8830460fecf744f801be687ea9b7d4" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656362" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface SharedWorkspaceFolders : Microsoft.Office.Core._IMsoDispObj, System.Collections.IEnumerable" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract SharedWorkspaceFolders implements class Microsoft.Office.Core._IMsoDispObj, class System.Collections.IEnumerable" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.SharedWorkspaceFolders" />
+  <TypeSignature Language="VB.NET" Value="Public Interface SharedWorkspaceFolders&#xA;Implements _IMsoDispObj, IEnumerable" />
+  <TypeSignature Language="C++ CLI" Value="public interface class SharedWorkspaceFolders : Microsoft::Office::Core::_IMsoDispObj, System::Collections::IEnumerable" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces>
+    <Interface>
+      <InterfaceName>Microsoft.Office.Core._IMsoDispObj</InterfaceName>
+    </Interface>
+    <Interface>
+      <InterfaceName>System.Collections.IEnumerable</InterfaceName>
+    </Interface>
+  </Interfaces>
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C037E-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4288)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>Este objeto, membro ou enumeração foi preterida e não se destina a ser usado em seu código. Uma coleção do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> objetos no espaço de trabalho compartilhado atual.</summary>
+    <remarks>To be added.</remarks>
+  </Docs>
+  <Members>
+    <Member MemberName="Add">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFolder Add (string FolderName, object ParentFolder);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class Microsoft.Office.Core.SharedWorkspaceFolder Add([in]string FolderName, [in]object ParentFolder) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceFolders.Add(System.String,System.Object)" />
+      <MemberSignature Language="VB.NET" Value="Public Function Add (FolderName As String, Optional ParentFolder As Object) As SharedWorkspaceFolder" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="FolderName" Type="System.String" />
+        <Parameter Name="ParentFolder" Type="System.Object" />
+      </Parameters>
+      <Docs>
+        <param name="FolderName">
+          <b>String</b> necessário. O nome da pasta a ser adicionada ao espaço de trabalho compartilhado atual.</param>
+        <param name="ParentFolder">Opcional <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />. A subpasta na qual a nova pasta será inserida ou a pasta principal da biblioteca de documentos no espaço de trabalho compartilhado. Adicione o arquivo à pasta principal da biblioteca de documentos deixando esse argumento opcional vazio.</param>
+        <summary>Adiciona uma pasta à biblioteca de documentos em um espaço de trabalho compartilhado.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Application">
+      <MemberSignature Language="C#" Value="public object Application { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Application" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Application" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Application As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Application { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Application</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743808)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um objeto <b>Application</b> que representa o aplicativo de contêiner para o objeto.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Count">
+      <MemberSignature Language="C#" Value="public int Count { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Count" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Count" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Count As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Count { int get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um <b>inteiro</b> indicando o número de itens na coleção especificada.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Creator">
+      <MemberSignature Language="C#" Value="public int Creator { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance int32 Creator" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Creator" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Creator As Integer" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property int Creator { int get(); };" />
+      <MemberType>Property</MemberType>
+      <Implements>
+        <InterfaceMember>P:Microsoft.Office.Core._IMsoDispObj.Creator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(1610743809)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Int32</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um inteiro de 32 bits que indica o aplicativo no qual o objeto especificado foi criado.</summary>
+        <value>To be added.</value>
+        <remarks>
+          <para>Se o objeto especificado foi criado no Microsoft Word, essa propriedade retornará 1297307460, que representa a cadeia de caracteres MSWD; Se tiver criado no Microsoft Excel, essa propriedade retornará 1480803660. Esse valor também pode ser representado pela constante <b>wdCreatorCode</b> no Word ou <b>xlCreatorCode</b> no Excel.</para> Propriedade 
+          <para>o <b>criador</b> principalmente foi projetada para ser usado no Macintosh, onde cada aplicativo possui um código de criador de quatro caracteres. Por exemplo, o Microsoft Word tem o código de criador MSWD. Para obter informações adicionais sobre essa propriedade, consulte a referência da linguagem Ajuda incluída no Microsoft Office Macintosh Edition.</para> O <b>criador</b> do 
+          <para>propriedade sempre retorna o identificador numérico para o aplicativo ativo, assim como o <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Application" /> propriedade sempre retorna o nome do aplicativo ativo na forma de sequência. Usado a propriedade <b>CreatedBy</b> do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFile" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" />, <see cref="T:Microsoft.Office.Core.SharedWorkspaceLink" />, e <see cref="T:Microsoft.Office.Core.SharedWorkspaceTask" /> objetos para retornar o nome da pessoa que criou esses objetos. Use as propriedades de documento para retornar informações sobre os autores de documentos do Office.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="GetEnumerator">
+      <MemberSignature Language="C#" Value="public System.Collections.IEnumerator GetEnumerator ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance class System.Collections.IEnumerator GetEnumerator() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.SharedWorkspaceFolders.GetEnumerator" />
+      <MemberSignature Language="VB.NET" Value="Public Function GetEnumerator () As IEnumerator" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; System::Collections::IEnumerator ^ GetEnumerator();" />
+      <MemberType>Method</MemberType>
+      <Implements>
+        <InterfaceMember>M:System.Collections.IEnumerable.GetEnumerator</InterfaceMember>
+      </Implements>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(-4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.TypeLibFunc(1024)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Collections.IEnumerator</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>To be added.</summary>
+        <returns>To be added.</returns>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Item">
+      <MemberSignature Language="C#" Value="public Microsoft.Office.Core.SharedWorkspaceFolder this[int Index] { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance class Microsoft.Office.Core.SharedWorkspaceFolder Item(int32)" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Item(System.Int32)" />
+      <MemberSignature Language="VB.NET" Value="Default Public ReadOnly Property Item(Index As Integer) As SharedWorkspaceFolder" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property Microsoft::Office::Core::SharedWorkspaceFolder ^ default[int] { Microsoft::Office::Core::SharedWorkspaceFolder ^ get(int Index); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(0)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>Microsoft.Office.Core.SharedWorkspaceFolder</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="Index" Type="System.Int32" />
+      </Parameters>
+      <Docs>
+        <param name="Index">
+          <b>Integer</b>necessário. Retorna o <b>SharedWorkspaceFolder</b> na posição especificada. <paramref name="Index" />não corresponde a ordem na qual os itens são exibidos no painel de espaço de trabalho compartilhado e não é afetada por meio da classificação novamente a exibição.</param>
+        <summary>Retorna um <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolder" /> objeto da coleção <b>pastas</b> do espaço de trabalho compartilhado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ItemCountExceeded">
+      <MemberSignature Language="C#" Value="public bool ItemCountExceeded { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance bool ItemCountExceeded" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.ItemCountExceeded" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property ItemCountExceeded As Boolean" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property bool ItemCountExceeded { bool get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Boolean</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna um valor <b>Boolean</b> que indica se o número de itens na coleção excedeu a 99 que podem ser exibidos no painel de tarefas de espaço de trabalho compartilhado.</summary>
+        <value>To be added.</value>
+        <remarks>Painel de tarefas <para>o espaço de trabalho compartilhado só pode exibir 99 arquivos do espaço de trabalho compartilhado e pastas, links, membros ou tarefas. Se mais de 99 itens são adicionados a qualquer uma dessas coleções, ocorre o seguinte:</para><list type="bullet"><item><para>a guia correspondente do painel de tarefas de espaço de trabalho compartilhado irá parar de exibir a lista de itens e exibirá um link para a página de Web do site de espaço de trabalho compartilhado em vez disso.</para></item><item><para>a coleção não é mais será preenchida localmente e seu <see cref="P:Microsoft.Office.Core.SharedWorkspaceFolders.Count" /> propriedade retornará 0 (zero).</para></item></list><para>Furthermore, depois que a propriedade <b>ItemCountExceeded</b> retorna <b>True</b> para a coleção especificada, o desenvolvedor não pode mais remediar a situação programaticamente excluindo itens da coleção para reduzir a contagem abaixo 99, pois a coleção não mais é preenchida.</para> Propriedade 
+          <para>o <b>ItemCountExceeded</b> do <see cref="T:Microsoft.Office.Core.SharedWorkspaceFiles" /> e o <see cref="T:Microsoft.Office.Core.SharedWorkspaceFolders" /> conjuntos retorna <b>True</b> quando a contagem de combinada de arquivos e pastas exceder 99, porque as duas listas são combinadas e exibidas juntos na guia documentos da o painel de tarefas de espaço de trabalho compartilhado.</para><para /></remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Parent">
+      <MemberSignature Language="C#" Value="public object Parent { get; }" />
+      <MemberSignature Language="ILAsm" Value=".property instance object Parent" />
+      <MemberSignature Language="DocId" Value="P:Microsoft.Office.Core.SharedWorkspaceFolders.Parent" />
+      <MemberSignature Language="VB.NET" Value="Public ReadOnly Property Parent As Object" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; property System::Object ^ Parent { System::Object ^ get(); };" />
+      <MemberType>Property</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+        <Attribute>
+          <AttributeName>get: System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Object</ReturnType>
+      </ReturnValue>
+      <Docs>
+        <summary>Retorna o objeto <b>pai</b> do objeto especificado.</summary>
+        <value>To be added.</value>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>

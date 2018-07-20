@@ -1,0 +1,258 @@
+<Type Name="IRibbonUI" FullName="Microsoft.Office.Core.IRibbonUI">
+  <Metadata>
+    <Meta Name="ms.openlocfilehash" Value="f912fe8c8db15a87c031bae5d14f2fe64d719567" />
+    <Meta Name="ms.sourcegitcommit" Value="f41bc3cdd2c00b9a51a4340ac823a9e309633924" />
+    <Meta Name="ms.translationtype" Value="MT" />
+    <Meta Name="ms.contentlocale" Value="pt-BR" />
+    <Meta Name="ms.lasthandoff" Value="07/19/2018" />
+    <Meta Name="ms.locfileid" Value="20656752" />
+  </Metadata>
+  <TypeSignature Language="C#" Value="public interface IRibbonUI" />
+  <TypeSignature Language="ILAsm" Value=".class public interface auto ansi abstract IRibbonUI" />
+  <TypeSignature Language="DocId" Value="T:Microsoft.Office.Core.IRibbonUI" />
+  <TypeSignature Language="VB.NET" Value="Public Interface IRibbonUI" />
+  <TypeSignature Language="C++ CLI" Value="public interface class IRibbonUI" />
+  <AssemblyInfo>
+    <AssemblyName>office</AssemblyName>
+    <AssemblyVersion>15.0.0.0</AssemblyVersion>
+  </AssemblyInfo>
+  <Interfaces />
+  <Attributes>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.Guid("000C03A7-0000-0000-C000-000000000046")</AttributeName>
+    </Attribute>
+    <Attribute>
+      <AttributeName>System.Runtime.InteropServices.TypeLibType(4160)</AttributeName>
+    </Attribute>
+  </Attributes>
+  <Docs>
+    <summary>O objeto retornado pelo procedimento <b>onLoad</b> especificado no rótulo <b>customUI</b>. O objeto contém métodos para invalidar as propriedades de controle e para atualizar a interface do usuário.</summary>
+    <remarks>
+      <para>Você pode personalizar a interface do usuário da faixa de opções (UI) usando os procedimentos de retorno de chamada suplementos COM. Quando o aplicativo host for iniciado, o procedimento de retorno de chamada <b>onLoad</b> é chamado.  O procedimento de retorno de chamada, em seguida, retorna um objeto <b>IRibbonUI</b> apontando para a interface de usuário (UI). Você pode usar esse objeto para invocar os métodos <b>Invalidate</b>, <b>InvalidateControl</b>e <b>Atualizar</b> .</para>
+      <para />
+    </remarks>
+    <example>
+      <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto <b>IRibbonUI</b> que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida todos os controles de cache e atualiza a interface do usuário.</para>
+      <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+      <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+      <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+      <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+    </example>
+  </Docs>
+  <Members>
+    <Member MemberName="ActivateTab">
+      <MemberSignature Language="C#" Value="public void ActivateTab (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTab([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTab(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTab (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTab(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(4)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</param>
+        <summary>Ativa a guia personalizada especificada.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabMso">
+      <MemberSignature Language="C#" Value="public void ActivateTabMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(5)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</param>
+        <summary>Ativa a guia interna especificada.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="ActivateTabQ">
+      <MemberSignature Language="C#" Value="public void ActivateTabQ (string ControlID, string Namespace);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void ActivateTabQ([in]string ControlID, [in]string Namespace) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.ActivateTabQ(System.String,System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub ActivateTabQ (ControlID As String, Namespace As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void ActivateTabQ(System::String ^ ControlID, System::String ^ Namespace);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(6)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+        <Parameter Name="Namespace" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Especifica o identificador da guia faixa de opções personalizada a ser ativada.</param>
+        <param name="Namespace">Especifica o namespace do elemento da guia.</param>
+        <summary>Ativa a guia personalizada especificada na interface do usuário da Faixa de Opções do Microsoft Office Fluent. Usa o nome totalmente qualificado da guia que inclui o identificador de e o namespace da guia.</summary>
+        <remarks>To be added.</remarks>
+      </Docs>
+    </Member>
+    <Member MemberName="Invalidate">
+      <MemberSignature Language="C#" Value="public void Invalidate ();" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void Invalidate() runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.Invalidate" />
+      <MemberSignature Language="VB.NET" Value="Public Sub Invalidate ()" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void Invalidate();" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(1)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters />
+      <Docs>
+        <summary>Invalida os valores em cache para todos os controles da interface do usuário Ribbon.</summary>
+        <remarks>
+          <para>Você pode personalizar a IU da faixa de opções usando os procedimentos de retorno de chamada suplementos COM. Para cada implementa os retornos de chamada o suplemento, as respostas são armazenados em cache.  Por exemplo, se um autor de suplemento implementa o procedimento de retorno de chamada <b>getImage</b> para um botão, a função é chamada uma vez, as cargas de imagem e, em seguida, se a imagem precisa ser atualizada, a imagem em cache é usada no lugar de cancelamento o procedimento. Esse processo continua in-loco até que o suplemento sinalizem os valores armazenados em cache são inválidos, usando o método <b>Invalidate</b> , nesse momento, o procedimento de retorno de chamada é chamado novamente e a resposta de retorno é armazenado em cache.  O suplemento pode então forçar uma atualização imediata da interface do usuário, chamando o método <b>Refresh</b> .</para>
+          <para />
+        </remarks>
+        <example>
+          <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida todos os controles da interface do usuário e atualiza a interface do usuário.</para>
+          <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+          <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+          <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+          <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the caches of all of this add-in’s controls 
+    MyRibbon.Invalidate()            
+End Sub</code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControl">
+      <MemberSignature Language="C#" Value="public void InvalidateControl (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControl([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControl(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControl (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControl(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(2)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Especifica a identificação do controle que será invalidado.</param>
+        <summary>Invalida o valor em cache de um controle exclusivo na interface do usuário Ribbon.</summary>
+        <remarks>
+          <para>Você pode personalizar a IU da faixa de opções usando os procedimentos de retorno de chamada suplementos COM. Para cada implementa os retornos de chamada o suplemento, as respostas são armazenados em cache.  Por exemplo, se um autor de suplemento implementa o procedimento de retorno de chamada <b>getImage</b> para um botão, a função é chamada uma vez, as cargas de imagem e, em seguida, se a imagem precisa ser atualizada, a imagem em cache é usada no lugar de cancelamento o procedimento. Esse processo continua in-loco para o controle até que o suplemento sinalizem os valores armazenados em cache são inválidos, usando o método <b>InvalidateControl</b> , nesse momento, o procedimento de retorno de chamada é chamado novamente e a resposta de retorno é armazenado em cache.</para>
+          <para />
+        </remarks>
+        <example>
+          <para>No exemplo a seguir, iniciar o aplicativo host dispara o procedimento de evento <b>onLoad</b> que, em seguida, chama um procedimento que cria um objeto que representa a interface do usuário da faixa de opções.  Em seguida, um procedimento de retorno de chamada é definido, o que invalida um controle da interface do usuário e atualiza a interface do usuário.</para>
+          <para>a seguir está a marcação XML para Office carregar a faixa de opções personalizada:</para>
+          <code>&amp;lt;customUI … onLoad=”MyAddInInitialize” …&amp;gt;</code>
+          <para>o seguinte é o método de retorno de chamada para o evento <b>onLoad</b> :</para>
+          <code>Dim MyRibbon As IRibbonUI
+Sub MyAddInInitialize(Ribbon As IRibbonUI)
+    Set MyRibbon = Ribbon
+End Sub
+
+Sub myFunction()
+    ‘ Invalidates the cache of a single control 
+    MyRibbon.InvalidateControl(“control5”)            
+End Sub</code>
+        </example>
+      </Docs>
+    </Member>
+    <Member MemberName="InvalidateControlMso">
+      <MemberSignature Language="C#" Value="public void InvalidateControlMso (string ControlID);" />
+      <MemberSignature Language="ILAsm" Value=".method public hidebysig newslot virtual instance void InvalidateControlMso([in]string ControlID) runtime managed" />
+      <MemberSignature Language="DocId" Value="M:Microsoft.Office.Core.IRibbonUI.InvalidateControlMso(System.String)" />
+      <MemberSignature Language="VB.NET" Value="Public Sub InvalidateControlMso (ControlID As String)" />
+      <MemberSignature Language="C++ CLI" Value="public:&#xA; void InvalidateControlMso(System::String ^ ControlID);" />
+      <MemberType>Method</MemberType>
+      <AssemblyInfo>
+        <AssemblyName>office</AssemblyName>
+        <AssemblyVersion>15.0.0.0</AssemblyVersion>
+      </AssemblyInfo>
+      <Attributes>
+        <Attribute>
+          <AttributeName>System.Runtime.InteropServices.DispId(3)</AttributeName>
+        </Attribute>
+      </Attributes>
+      <ReturnValue>
+        <ReturnType>System.Void</ReturnType>
+      </ReturnValue>
+      <Parameters>
+        <Parameter Name="ControlID" Type="System.String" />
+      </Parameters>
+      <Docs>
+        <param name="ControlID">Especificado o identificador do controle que será invalidado.</param>
+        <summary>Usado para invalidar um controle interno.</summary>
+        <remarks>
+          <para>A invalidação de um controle redesenha a tela e faz com que qualquer procedimento de retorno de chamada associado a esse controle seja executado.</para>
+          <para />
+        </remarks>
+      </Docs>
+    </Member>
+  </Members>
+</Type>
